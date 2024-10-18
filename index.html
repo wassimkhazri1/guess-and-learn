@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess & Learn!</title>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="div1"></div>
+	<div id="div2"></div>
+	<div id="welcome">
+		<div class="row">
+			<div class="column">	
+		    	<img id="logo2" src="./imgs/guessandlearn.png">
+			</div>
+		    <div class="column2">
+		    	<h1>Welcome to Guess & Learn!</h1>
+		    	<h3>Let's guess together, and learn!</h3>
+		    </div>
+		</div>
+	    <div id="game">
+			<div class="row">
+				<div class="col-lg-4">
+					<a href="#div4"><img onclick="myGame.displayGame()"  class="column imggame" src="./imgs/colors.jpg" alt="Colors"></a>
+					 <h2 class="text">Colors</h2>
+				</div>
+				<div class="col-lg-4">
+					<a href="#div4"><img  onclick="animals()" class="column imggame" src="./imgs/animals.jpg" href="#div4" alt="Colors"></a>
+					 <h2 class="text">Animals</h2>
+				</div>
+				<div class="col-lg-4">
+					<a href="#div4"><img  onclick="numbers()" class="column imggame" src="./imgs/numbers.jpg" href="#div4" alt="Colors"></a>
+					 <h2 class="text">Numbers</h2>
+				</div>
+	    </div>
+	</div>
+	<div id="div4">
+		<div id="colors" class="row"></div>
+	</div>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
