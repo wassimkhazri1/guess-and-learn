@@ -23,9 +23,6 @@
 #logo{
 	width: 50px;
 }
-body{
-	
-}
 h1{
 	margin-top: 0;
     margin-bottom: 10px;
@@ -41,10 +38,7 @@ h3{
     color: blue;
 }
 #welcome{
-	background-color: #ffe000; 
-	width: 100%;
-    height: 630px;
-
+	background-color: #5fabe9; 
 }
 #div1{
 	width: 100%;
@@ -59,33 +53,93 @@ h3{
 #div3{
 	width: 100%;
 	height: 80px;
-  background-color: #a2d82b;
+  background-color: #5fabe9;
   padding-left: 95px;
 }
 #div4{
-	width: 100%;
-	height: 4300px;
-  background: url(imgs/bg.jpg) no-repeat center ;
+  background-color: #51e951;
+  /* background: url(imgs/bg.jpg) no-repeat center ; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; 
 }
+
+.imag-containe {
+  position: relative;
+
+  display: inline-block;
+  
+}
+.over{
+  position: absolute;
+   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.overlay-button {
+  font-size: 16px;
+  background-color: rgba(25, 39, 235, 0.7);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay-button:hover {
+  background-color: rgba(62, 218, 88, 0.9);
+}
+
+
+
+
 * {
   box-sizing: border-box;
 }
-
-.column {
-  float: left;
-  width: 20%;
-  padding: 5px;
-  margin-left: -8px;
-  margin-right: 30px;
-  
+/* Style de conteneur pour les animaux */
+.animalslist {
+  display: flex;
+  flex-wrap: wrap; /* Pour permettre aux animaux de se placer sur plusieurs lignes si nécessaire */
+  justify-content: center; /* Centre les éléments dans le conteneur */
+  gap: 20px; /* Espace entre les images */
 }
+
+/* Style pour chaque colonne (chaque animal) */
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre l'image et le texte dans chaque colonne */
+  width: 150px; /* Largeur de chaque colonne */
+}
+/* Style pour chaque colonne (chaque shape) */
+/* .column1 img{
+  width: 250px; 
+  height: 250px;
+  object-fit: cover; 
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+
+/* Style pour l'image */
+.imggame {
+  width: 200px; /* Ajuste la taille de l'image */
+  height: 200px;
+  object-fit: cover; /* Ajuste l'image pour éviter la distorsion */
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style pour le texte sous chaque image */
+.animalname {
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
 .column2 {
   float: left;
-  width: 40%;
+  width: 60%;
   padding: 5px;
   margin-top: 30px;
   margin-left: 30px;
@@ -96,6 +150,7 @@ h3{
 /* Clearfix (clear floats) */
 .row::after {
   content: "";
+  padding: 35px;
   clear: both;
   display: table;
 }
@@ -114,10 +169,6 @@ h3{
   transform: scale(1.10); 
   border-radius: 20px;
 
-}
-.imggame{
-	width:70% ; 
-	border-radius: 20px;
 }
 
 .text {
@@ -145,21 +196,15 @@ h3{
 	border-radius: 8px;
 }
 .animal{
+  display: flex;
 	width: 150px;
 	height: 150px;
 	margin-left: 55px;
 	margin-top: 50px; 
 	border-radius: 8px;
+  
 }
-.animalname{
-    margin-left: 90px;
-    margin-top: 10px;
-    border-radius: 8px;
-    color: #1e2197;
-}
-.animalslist {
-  margin-left: 120px;
-}
+
 .colorguess{
 	width: 100px;
 	height: 50px;
@@ -216,7 +261,274 @@ h3{
   font-family: cursive;
 }
 .numberplus {
-  margin-right: -15px;
-  margin-left: 93px;
+  display: flex;
 
+}
+
+
+/*  styling for scroll up  */
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  height: 2000px; /* Example content height to demonstrate scrolling */
+  padding: 20px;
+}
+
+#scrollToTopBtn {
+  display: none; /* Initially hide the button */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  line-height: 48px; /* Center icon vertically */
+  text-align: center;
+  transition: opacity 0.4s;
+}
+
+#scrollToTopBtn:hover {
+  opacity: 0.8;
+}
+
+/*--------------------------------------------------------------
+# Global Footer
+--------------------------------------------------------------*/
+.footer {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.footer .social-links {
+  margin: 0 0 30px 0;
+}
+
+.footer .social-links a {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  line-height: 1;
+  margin: 0 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  text-decoration: none;
+}
+
+.footer .copyright {
+  padding-top: 25px;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.footer .credits {
+  font-size: 13px;
+  padding-top: 5px;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  overflow: hidden;
+  background: var(--background-color);
+  transition: all 0.6s ease-out;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Cachée par défaut */
+  position: fixed; /* Position fixe */
+  z-index: 1; /* Affiche au-dessus de tout le reste */
+  padding-top: 100px; /* Espace en haut de l'écran */
+  left: 0;
+  top: 0;
+  width: 100%; /* Largeur totale */
+  height: 100%; /* Hauteur totale */
+  overflow: auto; /* Activer le scroll si nécessaire */
+  background-color: rgba(0,0,0,0.8); /* Fond sombre */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+}
+
+/* Caption of the modal (text) */
+#caption {
+  margin: auto;
+  display: block;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+/* Container de l'animation couvrant toute la fenêtre */
+#animationContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* Empêche l'interaction avec le contenu */
+  z-index: 9999; /* Au-dessus de tout */
+}
+
+/* Style pour les étoiles/fleurs */
+.star {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: gold;
+  border-radius: 50%; /* Pour une étoile, ronde */
+  opacity: 0;
+  animation: fadeInOut 2s ease-in-out forwards;
+  box-shadow: 0 0 10px gold, 0 0 20px yellow; /* Ajoute un éclat lumineux */
+}
+
+.flower {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: pink;
+  border-radius: 50%;
+  opacity: 0;
+  animation: fadeInOut 2s ease-in-out forwards;
+  box-shadow: 0 0 10px pink, 0 0 20px lightpink;
+}
+
+/* Animation de fade-in et fade-out */
+@keyframes fadeInOut {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* Confetti style */
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 30px;
+  background-color: randomColor();
+  opacity: 0;
+  transform: rotate(45deg);
+  animation: fallConfetti 3s ease-in-out forwards;
+}
+
+@keyframes fallConfetti {
+  0% {
+    transform: translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.circle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 0, 0, 0.7);
+  animation: expandCircle 1s ease-out forwards;
+}
+
+@keyframes expandCircle {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+  }
 }
