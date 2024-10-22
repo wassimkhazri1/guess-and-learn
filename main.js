@@ -6,362 +6,374 @@
 	{
 		"image":"./imgs/ant.png",
 		"name":"ant",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_ant_word.mp3"
+		"voice":"./img/audioanimal/ant.mp3"
 	},		
 	{
 		"image":"./imgs/bear.png",
 		"name":"bear",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_bear_word.mp3"
+		"voice":"./img/audioanimal/bear.mp3"
     },
     {
 		"image":"./imgs/bee.png",
 		"name":"bee",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_bee_word.mp3"
+		"voice":"./img/audioanimal/bee.mp3"
     },
     {
 		"image":"./imgs/bird.png",
 		"name":"bird",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_bird_word.mp3"
+		"voice":"./img/audioanimal/bird.mp3"
 	},
 	{
 		"image":"./imgs/butterfly.png",
 		"name":"butterfly",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_butterfly_word.mp3"
+		"voice":"./img/audioanimal/butterfly.mp3"
 	},
 	{
 		"image":"./imgs/camel.png",
 		"name":"camel",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_camel_word.mp3"
+		"voice":"./img/audioanimal/camel.mp3"
 	},
 	{
 		"image":"./imgs/cat.png",
 		"name":"cat",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_cat_word.mp3"
+		"voice":"./img/audioanimal/cat.mp3"
 	},
 	{
 		"image":"./imgs/caterpillar.png",
 		"name":"caterpillar",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_caterpillar_word.mp3"
+		"voice":"./img/audioanimal/caterpillar.mp3"
 	},
 	{
 		"image":"./imgs/chicken.png",
 		"name":"chicken",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_chicken_word.mp3"
+		"voice":"./img/audioanimal/chicken.mp3"
 	},
 	{
 		"image":"./imgs/cow.png",
 		"name":"cow",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_cow_word.mp3"
+		"voice":"./img/audioanimal/cow.mp3"
 	},
 	{
 		"image":"./imgs/crab.png",
 		"name":"crab",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_crab_word.mp3"
+		"voice":"./img/audioanimal/crab.mp3"
 	},
 	{
 		"image":"./imgs/crocodile.png",
 		"name":"crocodile",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_crocodile_word.mp3"
+		"voice":"./img/audioanimal/crocodile.mp3"
 	},
 	{
 		"image":"./imgs/deer.png",
 		"name":"deer",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_deer_word.mp3"
+		"voice":"./img/audioanimal/deer.mp3"
 	},
 	{
 		"image":"./imgs/dog.png",
 		"name":"dog",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_dog_word.mp3"
+		"voice":"./img/audioanimal/dog.mp3"
 	},
 	{
 		"image":"./imgs/donkey.png",
 		"name":"donkey",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_donkey_word.mp3"
+		"voice":"./img/audioanimal/donkey.mp3"
 	},
 	{
 		"image":"./imgs/duck.png",
 		"name":"duck",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_duck_word.mp3"
+		"voice":"./img/audioanimal/duck.mp3"
 	},
 	{
 		"image":"./imgs/elephant.png",
 		"name":"elephant",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_elephant_word.mp3"
+		"voice":"./img/audioanimal/elephant.mp3"
 	},
 	{
 		"image":"./imgs/fish.png",
 		"name":"fish",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_fish_word.mp3"
+		"voice":"./img/audioanimal/fish.mp3"
 	},
 	{
 		"image":"./imgs/frog.png",
 		"name":"frog",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_frog_word.mp3"
+		"voice":"./img/audioanimal/frog.mp3"
 	},
 	{
 		"image":"./imgs/giraffe.png",
 		"name":"giraffe",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_giraffe_word.mp3"
+		"voice":"./img/audioanimal/giraffe.mp3"
 	},
 	{
 		"image":"./imgs/goat.png",
 		"name":"goat",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_goat_word.mp3"
+		"voice":"./img/audioanimal/goat.mp3"
 	},
 	{
 		"image":"./imgs/hamster.png",
 		"name":"hamster",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_hamster_word.mp3"
+		"voice":"./img/audioanimal/hamster.mp3"
 	},
 	{
 		"image":"./imgs/hedgehog.png",
 		"name":"hedgehog",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_hedgehog_word.mp3"
+		"voice":"./img/audioanimal/hedgehog.mp3"
 	},
 	{
 		"image":"./imgs/horse.png",
 		"name":"horse",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_horse_word.mp3"
+		"voice":"./img/audioanimal/horse.mp3"
 	},
 	{
 		"image":"./imgs/jellyfish.png",
 		"name":"jellyfish",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_jellyfish_word.mp3"
+		"voice":"./img/audioanimal/jellyfish.mp3"
 	},
 	{
 		"image":"./imgs/ladybird.png",
 		"name":"ladybird",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_ladybird_word.mp3"
+		"voice":"./img/audioanimal/ladybird.mp3"
 	},
 	{
 		"image":"./imgs/sheep.png",
 		"name":"sheep",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_sheep_word.mp3"
+		"voice":"./img/audioanimal/sheep.mp3"
 	},
 	{
 		"image":"./imgs/lion.png",
 		"name":"lion",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_lion_word.mp3"
+		"voice":"./img/audioanimal/lion.mp3"
 	},
 	{
 		"image":"./imgs/mole.png",
 		"name":"mole",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_mole_word.mp3"
+		"voice":"./img/audioanimal/mole.mp3"
 	},
 	{
 		"image":"./imgs/monkey.png",
 		"name":"monkey",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_monkey_word.mp3"
+		"voice":"./img/audioanimal/monkey.mp3"
 	},
 	{
 		"image":"./imgs/mouse.png",
 		"name":"mouse",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_mouse_word.mp3"
+		"voice":"./img/audioanimal/mouse.mp3"
 	},
 	{
 		"image":"./imgs/octopus.png",
 		"name":"octopus",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_octopus_word.mp3"
+		"voice":"./img/audioanimal/octopus.mp3"
 	},
 	{
 		"image":"./imgs/owl.png",
 		"name":"owl",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_owl_word.mp3"
+		"voice":"./img/audioanimal/owl.mp3"
 	},
 	{
 		"image":"./imgs/panda.png",
 		"name":"panda",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_panda_word.mp3"
+		"voice":"./img/audioanimal/panda.mp3"
 	},
 	{
 		"image":"./imgs/penguin.png",
 		"name":"penguin",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_penguin_word.mp3"
+		"voice":"./img/audioanimal/penguin.mp3"
 	},
 	{
 		"image":"./imgs/pig.png",
 		"name":"pig",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_pig_word.mp3"
+		"voice":"./img/audioanimal/pig.mp3"
 	},
 	{
 		"image":"./imgs/pony.png",
 		"name":"pony",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_pony_word.mp3"
+		"voice":"./img/audioanimal/pony.mp3"
 	},
 	{
 		"image":"./imgs/rabbit.png",
 		"name":"rabbit",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_rabbit_word.mp3"
+		"voice":"./img/audioanimal/rabbit.mp3"
 	},
 	{
 		"image":"./imgs/seahorse.png",
 		"name":"seahorse",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_seahorse_word.mp3"
+		"voice":"./img/audioanimal/seahorse.mp3"
 	},
 	{
 		"image":"./imgs/snake.png",
 		"name":"snake",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_snake_word.mp3"
+		"voice":"./img/audioanimal/snake.mp3"
 	},
 	{
 		"image":"./imgs/spider.png",
 		"name":"spider",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_spider_word.mp3"
+		"voice":"./img/audioanimal/spider.mp3"
 	},
 	{
 		"image":"./imgs/starfish.png",
 		"name":"starfish",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_starfish_word.mp3"
+		"voice":"./img/audioanimal/starfish.mp3"
 	},
 	{
 		"image":"./imgs/stingray.png",
 		"name":"stingray",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_stingray_word.mp3"
+		"voice":"./img/audioanimal/stingray.mp3"
 	},
 	{
 		"image":"./imgs/tiger.png",
 		"name":"tiger",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_tiger_word.mp3"
+		"voice":"./img/audioanimal/tiger.mp3"
 	},
 	{
 		"image":"./imgs/turkey.png",
 		"name":"turkey",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_turkey_word.mp3"
+		"voice":"./img/audioanimal/turkey.mp3"
 	},
 	{
 		"image":"./imgs/turtle.png",
 		"name":"turtle",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_turtle_word.mp3"
+		"voice":"./img/audioanimal/turtle.mp3"
 	},
 	{
 		"image":"./imgs/unicorn.png",
 		"name":"unicorn",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_unicorn_word.mp3"
+		"voice":"./img/audioanimal/unicorn.mp3"
 	},
 	{
 		"image":"./imgs/whale.png",
 		"name":"whale",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_whale_word.mp3"
+		"voice":"./img/audioanimal/whale.mp3"
 	},
 	{
 		"image":"./imgs/worm.png",
 		"name":"worm",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_worm_word.mp3"
+		"voice":"./img/audioanimal/worm.mp3"
 	},
 	{
 		"image":"./imgs/zebra.png",
 		"name":"zebra",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_zebra_word.mp3"
+		"voice":"./img/audioanimal/zebra.mp3"
 	},
 	{
 		"image":"./imgs/pigeon.png",
 		"name":"pigeon",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_pigeon_word.mp3"
+		"voice":"./img/audioanimal/pigeon.mp3"
 	},
 	{
 		"image":"./imgs/dinosaur.png",
 		"name":"dinosaur",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_dinosaur_word.mp3"
+		"voice":"./img/audioanimal/dinosaur.mp3"
 	},
 	{
 		"image":"./imgs/dragon.png",
 		"name":"dragon",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_dragon_word.mp3"
+		"voice":"./img/audioanimal/dragon.mp3"
 	},
 	{
 		"image":"./imgs/kangaroo.png",
 		"name":"kangaroo",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_kangaroo_word.mp3"
+		"voice":"./img/audioanimal/kangaroo.mp3"
 	},
 	{
 		"image":"./imgs/clownfish.png",
 		"name":"clownfish",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_clownfish_word.mp3"
+		"voice":"./img/audioanimal/clownfish.mp3"
 	},
 	{
 		"image":"./imgs/rhinoceros.png",
 		"name":"rhinoceros",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_rhinoceros_word.mp3"
+		"voice":"./img/audioanimal/rhinoceros.mp3"
 	},
 	{
 		"image":"./imgs/toad.png",
 		"name":"toad",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_toad_word.mp3"
+		"voice":"./img/audioanimal/toad.mp3"
 	},
 	{
 		"image":"./imgs/puppy.png",
 		"name":"puppy",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_puppy_word.mp3"
+		"voice":"./img/audioanimal/puppy.mp3"
 	},
 	{
 		"image":"./imgs/hippo.png",
 		"name":"hippo",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_hippo_word.mp3"
+		"voice":"./img/audioanimal/hippo.mp3"
 	},
 	{
 		"image":"./imgs/rat.png",
 		"name":"rat",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_rat_word.mp3"
+		"voice":"./img/audioanimal/rat.mp3"
 	},
 	{
 		"image":"./imgs/ostrich.png",
 		"name":"ostrich",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_ostrich_word.mp3"
+		"voice":"./img/audioanimal/ostrich.mp3"
 	},
 	{
 		"image":"./imgs/peacock.png",
 		"name":"peacock",
-		"voice":"https://sound-wall.s3-eu-west-1.amazonaws.com/en_peacock_word.mp3"
+		"voice":"./img/audioanimal/peacock.mp3"
 	}
 ];
 
  var colorsArray = [
 			{
 				"image":"./img/colors/black.png",
+				"name" : "black",
 				"voice":"./img/audiocolor/black.mp3"
 			},
 			{
 				"image":"./img/colors/blue.png",
+				"name" : "blue",
 				"voice":"./img/audiocolor/blue.mp3"
 			},
 			{
 				"image":"./img/colors/brown.png",
+				"name" : "brown",
 				"voice":"./img/audiocolor/brown.mp3"
 			},
 			{
 				"image":"./img/colors/gray.png",
+				"name" : "gray",
 				"voice":"./img/audiocolor/grey.mp3"
 			},
 			{
 				"image":"./img/colors/green.png",
+				"name" : "green",
 				"voice":"./img/audiocolor/green.mp3"
 			},
 			{
 				"image":"./img/colors/magenta.png",
+				"name" : "magenta",
 				"voice":"./img/audiocolor/magenta.mp3"
 			},
 			{
 				"image":"./img/colors/orange.png",
+				"name" : "orange",
 				"voice":"./img/audiocolor/orange.mp3"
 			},
 			{
 				"image":"./img/colors/pink.png",
+				"name" : "pink",
 				"voice":"./img/audiocolor/pink.mp3"
 			},
 			{
 				"image":"./img/colors/purple.png",
+				"name" : "purple",
 				"voice":"./img/audiocolor/purple.mp3"
 			},
 			{
 				"image":"./img/colors/red.png",
+				"name" : "red",
 				"voice":"./img/audiocolor/red.mp3"
 			},
 			{
 				"image":"./img/colors/white.png",
+				"name" : "white",
 				"voice":"./img/audiocolor/white.mp3"
 			},
 			{
 				"image":"./img/colors/yellow.png",
+				"name" : "yellow",
 				"voice":"./img/audiocolor/yellow.mp3"
 			}
 		
@@ -369,200 +381,262 @@
 		var clothesArray = [
 			{
                 "image":"./img/clothes/blouse.png",
+				"name" : "blouse",
 				"voice":"./img/audioclothes/blouse.mp3"
 			},
 			{
                 "image":"./img/clothes/coat.png",
+				"name" : "coat",
 				"voice":"./img/audioclothes/coat.mp3"
 			},
 			{
                 "image":"./img/clothes/dress.png",
+				"name" : "dress",
 				"voice":"./img/audioclothes/dress.mp3"
 			},
 			{
                 "image":"./img/clothes/hat.png",
+				"name" : "hat",
 				"voice":"./img/audioclothes/hat.mp3"
 			},
 			{
                 "image":"./img/clothes/jacket.png",
+				"name" : "jacket",
 				"voice":"./img/audioclothes/jacket.mp3"
 			},
 			{
                 "image":"./img/clothes/jeans.png",
+				"name" : "jeans",
 				"voice":"./img/audioclothes/jeans.mp3"
 			},
 			{
                 "image":"./img/clothes/pullover.png",
+				"name" : "pullover",
 				"voice":"./img/audioclothes/pullover.mp3"
 			},
 			{
                 "image":"./img/clothes/sandals.png",
+				"name" : "sandals",
 				"voice":"./img/audioclothes/sandals.mp3"
 			},
 			{
                 "image":"./img/clothes/shirt.png",
+				"name" : "shirt",
 				"voice":"./img/audioclothes/shirt.mp3"
 			},
 			{
                 "image":"./img/clothes/shoes.png",
+				"name" : "shoes",
 				"voice":"./img/audioclothes/shoes.mp3"
 			},
 			{
                 "image":"./img/clothes/shorts.png",
+				"name" : "shorts",
 				"voice":"./img/audioclothes/shorts.mp3"
 			},
 			{
                 "image":"./img/clothes/skirt.png",
+				"name" : "skirt",
 				"voice":"./img/audioclothes/skirt.mp3"
 			},
 			{
                 "image":"./img/clothes/socks.png",
+				"name" : "socks",
 				"voice":"./img/audioclothes/socks.mp3"
 			},
 			{
                 "image":"./img/clothes/sweatshirt.png",
+				"name" : "sweatshirt",
 				"voice":"./img/audioclothes/sweatshirt.mp3"
 			},
 			{
                 "image":"./img/clothes/swimsuit.png",
+				"name" : "swimsuit",
 				"voice":"./img/audioclothes/swimsuit.mp3"
 			},
 			{
                 "image":"./img/clothes/tshirt.png",
+				"name" : "tshirt",
 				"voice":"./img/audioclothes/tshirt.mp3"
 			},
 			{
                 "image":"./img/clothes/tie.png",
+				"name" : "tie",
 				"voice":"./img/audioclothes/tie.mp3"
 			},
 			{
                 "image":"./img/clothes/tracksuit.png",
+				"name" : "tracksuit",
 				"voice":"./img/audioclothes/tracksuit.mp3"
 			},
 			{
                 "image":"./img/clothes/trainers.png",
+				"name" : "trainers",
 				"voice":"./img/audioclothes/trainers.mp3"
 			},
 			{
                 "image":"./img/clothes/trousers.png",
+				"name" : "trousers",
 				"voice":"./img/audioclothes/trousers.mp3"
 			}
 		]
 		 var fruitsArray =[
 		{
 			"image" : "./img/fruits/apple.png",
+			"name" : "apple",
 			"voice" : "./img/audiofruit/apple.mp3"
 		},
 		{
-			"image" : "./img/fruits/avocado.png"
+			"image" : "./img/fruits/avocado.png",
+			"name" : "avocado",
+			"voice" : "./img/audiofruit/banana.mp3"
 		},
 		{
 			"image" : "./img/fruits/banana.png",
+			"name" : "banana",
 			"voice" : "./img/audiofruit/banana.mp3"
 		},
 		{
 			"image" : "./img/fruits/cherry.png",
+			"name" : "cherry",
 			"voice": "./img/audiofruit/cherry.mp3"
 		},
 		{
-			"image" : "./img/fruits/chikoo.png"
+			"image" : "./img/fruits/chikoo.png",
+			"name" : "chikoo",
+			"voice" : "./img/audiofruit/chikoo.mp3"
 		},
 		{
-			"image" : "./img/fruits/custardapple.png"
+			"image" : "./img/fruits/custardapple.png",
+			"name" : "custardapple",
+			"voice" : "./img/audiofruit/custardapple.mp3"
 		},
 		{
 			"image" : "./img/fruits/grapes.png",
+			"name" : "grapes",
 			"voice" : "./img/audiofruit/grapes.mp3"
 		},
 		{
-			"image" : "./img/fruits/guava.png"
+			"image" : "./img/fruits/guava.png",
+			"name" : "guava",
+			"voice" : "./img/audiofruit/guava.mp3"
 		},
 		{
-			"image" : "./img/fruits/jackfruit.png"
+			"image" : "./img/fruits/jackfruit.png",
+			"name" : "jackfruit",
+			"voice" : "./img/audiofruit/jackfruit.mp3"
 		},
 		{
-			"image" : "./img/fruits/lime.png"
-		},
-		{
-			"image" : "./img/fruits/lemon.png",
+			"image" : "./img/fruits/lime.png",
+			"name" : "lime",
 			"voice" : "./img/audiofruit/lemon.mp3"
 		},
 		{
-			"image" : "./img/fruits/mango.png"
+			"image" : "./img/fruits/lemon.png",
+			"name" : "lemon",
+			"voice" : "./img/audiofruit/lemon.mp3"
+		},
+		{
+			"image" : "./img/fruits/mango.png",
+			"name" : "mango",
+			"voice" : "./img/audiofruit/mango.mp3"
 		},
 		{
 			"image" : "./img/fruits/orange.png",
+			"name" : "orange",
 			"voice" : "./img/audiofruit/orange.mp3"
 		},
 		{
-			"image" : "./img/fruits/papaya.png"
+			"image" : "./img/fruits/papaya.png",
+			"name" : "papaya",
+			"voice" : "./img/audiofruit/papaya.mp3"
 		},
 		{
-			"image" : "./img/fruits/peach.png"
+			"image" : "./img/fruits/peach.png",
+			"name" : "peach",
+			"voice" : "./img/audiofruit/peach.mp3"
 		},
 		{
 			"image" : "./img/fruits/pear.png",
+			"name" : "pear",
 			"voice" : "./img/audiofruit/pear.mp3"
 		},
 		{
 			"image" : "./img/fruits/pineapple.png",
+			"name" : "pineapple",
 			"voice" : "./img/audiofruit/pineapple.mp3"
 		},
 		{
 			"image" : "./img/fruits/plum.png",
+			"name" : "plum",
 			"voice" : "./img/audiofruit/plum.mp3"
 		},
 		{
-			"image" : "./img/fruits/pomegranate.png"
+			"image" : "./img/fruits/pomegranate.png",
+			"name" : "pomegranate",
+			"voice" : "./img/audiofruit/pomegranate.mp3"
 		},
 		{
 			"image" : "./img/fruits/strawberry.png",
+			"name" : "strawberry",
 			"voice" : "./img/audiofruit/strawberry.mp3"
 
 		},
 		{
-			"image" : "./img/fruits/watermelon.png"
+			"image" : "./img/fruits/watermelon.png",
+			"name" : "watermelon",
+			"voice" : "./img/audiofruit/watermelon.mp3"
 		}
 		];
 	var bodyArray =[
 		{
 			"image" : "./img/body/arm.png",
+			"name" : "arm",
 			"voice" : "./img/audiobody/arm.mp3"
 		},
 		{
 			"image" : "./img/body/back.png",
+			"name" : "back",
 			"voice" : "./img/audiobody/back.mp3"
 		},
 		{
 			"image" : "./img/body/finger.png",
+			"name" : "finger",
 			"voice" : "./img/audiobody/finger.mp3"
 		},
 		{
 			"image" : "./img/body/foot.png",
+			"name" : "foot",
 			"voice" : "./img/audiobody/foot.mp3"
 		},
 		{
 			"image" : "./img/body/hand.png",
+			"name" : "hand",
 			"voice" : "./img/audiobody/hand.mp3"
 		},
 		{
 			"image" : "./img/body/head.png",
+			"name" : "head",
 			"voice" : "./img/audiobody/head.mp3"
 		},
 		{
 			"image" : "./img/body/leg.png",
+			"name" : "leg",
 			"voice" : "./img/audiobody/leg.mp3"
 		},
 		{
 			"image" : "./img/body/stomach.png",
+			"name" : "stomach",
 			"voice" : "./img/audiobody/stomach.mp3"
 		},
 		{
 			"image" : "./img/body/throat.png",
+			"name" : "throat",
 			"voice" : "./img/audiobody/throat.mp3"
 		},
 		{
 			"image" : "./img/body/toes.png",
+			"name" : "toes",
 			"voice" : "./img/audiobody/toes.mp3"
 		}
 	];	
@@ -630,7 +704,232 @@
 			{
 				"image":"./img/shape/circle.png"
 			}
-		];		
+		];	
+		var numbersArray = [
+			{
+				"name" : "zero",
+				"voice" :""
+			},
+			{
+				"name" : "one",
+				"voice" :"./img/audionumber/1.mp3"
+			},
+			{
+				"name" : "tow",
+				"voice" :"./img/audionumber/2.mp3"
+			},
+			{
+				"name" : "three",
+				"voice" :"./img/audionumber/3.mp3"
+			},
+			{
+				"name" : "four",
+				"voice" :"./img/audionumber/4.mp3"
+			},
+			{
+				"name" : "five",
+				"voice" :"./img/audionumber/5.mp3"
+			},
+			{
+				"name" : "six",
+				"voice" :"./img/audionumber/6.mp3"
+			},
+			{
+				"name" : "seven",
+				"voice" :"./img/audionumber/7.mp3"
+			},
+			{
+				"name" : "height",
+				"voice" :"./img/audionumber/8.mp3"
+			},
+			{
+				"name" : "nine",
+				"voice" :"./img/audionumber/9.mp3"
+			},
+			{
+				"name" : "ten",
+				"voice" :"./img/audionumber/10.mp3"
+			},
+			{
+				"name" : "eleven",
+				"voice" :"./img/audionumber/11.mp3"
+			},
+			{
+				"name" : "twelve",
+				"voice" :"./img/audionumber/12.mp3"
+			},
+			{
+				"name" : "therteen",
+				"voice" :"./img/audionumber/13.mp3"
+			},
+			{
+				"name" : "fourteen",
+				"voice" :"./img/audionumber/14.mp3"
+			},
+			{
+				"name" : "fifteen",
+				"voice" :"./img/audionumber/15.mp3"
+			},
+			{
+				"name" : "sixteen",
+				"voice" :"./img/audionumber/16.mp3"
+			},
+			{
+				"name" : "seventeen",
+				"voice" :"./img/audionumber/17.mp3"
+			},
+			{
+				"name" : "heighteen",
+				"voice" :"./img/audionumber/18.mp3"
+			},
+
+			{
+				"name" : "nineteen",
+				"voice" :"./img/audionumber/19.mp3"
+			},
+			{
+				"name" : "twenty",
+				"voice" :"./img/audionumber/20.mp3"
+			},
+			{
+				"name" : "thirty",
+				"voice" :"./img/audionumber/30.mp3"
+			},
+			{
+				"name" : "forty",
+				"voice" :"./img/audionumber/40.mp3"
+			},
+			{
+				"name" : "fifty",
+				"voice" :"./img/audionumber/50.mp3"
+			},
+			{
+				"name" : "sixty",
+				"voice" :"./img/audionumber/60.mp3"
+			},
+			{
+				"name" : "seventy",
+				"voice" :"./img/audionumber/70.mp3"
+			},
+			{
+				"name" : "heighty",
+				"voice" :"./img/audionumber/80.mp3"
+			},
+
+			{
+				"name" : "ninety",
+				"voice" :"./img/audionumber/90.mp3"
+			},
+			{
+				"name" : "hundred",
+				"voice" :"./img/audionumber/100.mp3"
+			}
+		];
+		var jobArray = [
+			{
+				"image" : "./img/jobs/chef.png",
+				"name" : "chef",
+				"voice" :"./img/audiojob/chef.mp3"
+			},
+			{
+				"image" : "./img/jobs/doctor.png",
+				"name" : "doctor",
+				"voice" :"./img/audiojob/doctor.mp3"
+			},
+			{
+				"image" : "./img/jobs/farmer.png",
+				"name" : "farmer",
+				"voice" :"./img/audiojob/farmer.mp3"
+			},
+			{
+				"image" : "./img/jobs/fireman.png",
+				"name" : "fireman",
+				"voice" :"./img/audiojob/fireman.mp3"
+			},
+			{
+				"image" : "./img/jobs/footballer.png",
+				"name" : "footballer",
+				"voice" :"./img/audiojob/footballer.mp3"
+			},
+			{
+				"image" : "./img/jobs/hairdresser.png",
+				"name" : "haidresser",
+				"voice" :"./img/audiojob/hairdresser.mp3"
+			},
+			{
+				"image" : "./img/jobs/mechanic.png",
+				"name" : "mechanic",
+				"voice" :"./img/audiojob/mechanic.mp3"
+			},
+			{
+				"image" : "./img/jobs/policeman.png",
+				"name" : "policeman",
+				"voice" :"./img/audiojob/policeman.mp3"
+			},
+			{
+				"image" : "./img/jobs/teacher.png",
+				"name" : "teacher",
+				"voice" :"./img/audiojob/teacher.mp3"
+			},
+			{
+				"image" : "./img/jobs/waitress.png",
+				"name" : "waitress",
+				"voice" :"./img/audiojob/waitress.mp3"
+			}
+		];
+		var VegetablesArray = [
+			{
+				"image" : "./img/vegetables/beans.png",
+				"name" : "beans",
+				"voice" :"./img/audiovegetable/beans.mp3"
+			},
+			{
+				"image" : "./img/vegetables/cabbage.png",
+				"name" : "cabbage",
+				"voice" :"./img/audiovegetable/cabbage.mp3"
+			},
+			{
+				"image" : "./img/vegetables/carrots.png",
+				"name" : "carrots",
+				"voice" :"./img/audiovegetable/carrots.mp3"
+			},
+			{
+				"image" : "./img/vegetables/cucumber.png",
+				"name" : "cucumber",
+				"voice" :"./img/audiovegetable/cucumber.mp3"
+			},
+			{
+				"image" : "./img/vegetables/garlic.png",
+				"name" : "garlic",
+				"voice" :"./img/audiovegetable/garlic.mp3"
+			},
+			{
+				"image" : "./img/vegetables/leeks.png",
+				"name" : "leeks",
+				"voice" :"./img/audiovegetable/leeks.mp3"
+			},
+			{
+				"image" : "./img/vegetables/onions.png",
+				"name" : "onions",
+				"voice" :"./img/audiovegetable/onions.mp3"
+			},
+			{
+				"image" : "./img/vegetables/peas.png",
+				"name" : "peas",
+				"voice" :"./img/audiovegetable/peas.mp3"
+			},
+			{
+				"image" : "./img/vegetables/potatoes.png",
+				"name" : "potatoes",
+				"voice" :"./img/audiovegetable/potatoes.mp3"
+			},
+			{
+				"image" : "./img/vegetables/tomatoes.png",
+				"name" : "tomatoes",
+				"voice" :"./img/audiovegetable/tomatoes.mp3"
+			}
+		];
+
 var colorsArr = ["red","blue","green","white", "black","purple","pink","yellow"];
 
 function colors() {
@@ -675,7 +974,58 @@ function playAudio(i) {
 	console.log('hello');
 	new Audio(url).play();
   }
-  var result = 0;
+  function playAudioJob(i){
+	var url = jobArray[i]["voice"];
+	new Audio(url).play();
+  }
+  function playAudioVegetable(i){
+	var url = VegetablesArray[i]["voice"];
+	new Audio(url).play();
+  }
+  function displayVegetables(){
+	$('#div4').html('');
+	var $title = $('<h1 class = "titleh2">Pick a job and learn how to spell its name</h1>')
+	$('#div4').append($title);
+	var $vegetables =  $('<div id="colors" class="row animalslist"></div>');
+	var index = VegetablesArray.length - 1;
+    while(index >= 0){
+		//var audio = jobArray[index]["voice"];
+		///console.log(audio);
+		var $vegetable = $('<div class=" column"><img id="'+index+'" onclick="playAudioVegetable(this.id)" style="background-color : white" class=" imggame animal" src="'+VegetablesArray[index]["image"]+'" alt="Colors" ></div>');
+		// var $animal = $('<div class=" column"><img id="'+index+'"/*onclick="playAudio(this.id)" style="background-color : white" class=" imggame animal" src="'+animalsArray[index]["image"]+'" alt="Colors" ></div>');
+		//var $text = $('<h2 class="animalname">'+animalsArray[index]["name"]+'</h2>');
+		//$color.append($text);
+		// $colors.prepend($color);
+		$vegetables.append($vegetable);
+		index--;
+	}
+
+	$('#div4').append($vegetables);
+
+}
+
+  function displayJob(){
+	$('#div4').html('');
+	var $title = $('<h1 class = "titleh2">Pick a job and learn how to spell its name</h1>')
+	$('#div4').append($title);
+	var $jobs =  $('<div id="colors" class="row animalslist"></div>');
+	var index = jobArray.length - 1;
+    while(index >= 0){
+		//var audio = jobArray[index]["voice"];
+		///console.log(audio);
+		var $job = $('<div class=" column"><img id="'+index+'" onclick="playAudioJob(this.id)" style="background-color : white" class=" imggame animal" src="'+jobArray[index]["image"]+'" alt="Colors" ></div>');
+		// var $animal = $('<div class=" column"><img id="'+index+'"/*onclick="playAudio(this.id)" style="background-color : white" class=" imggame animal" src="'+animalsArray[index]["image"]+'" alt="Colors" ></div>');
+		//var $text = $('<h2 class="animalname">'+animalsArray[index]["name"]+'</h2>');
+		//$color.append($text);
+		// $colors.prepend($color);
+		$jobs.append($job);
+		index--;
+	}
+
+	$('#div4').append($jobs);
+
+}
+  
 
 function animals() {
 	$('#div4').html('');
@@ -804,6 +1154,8 @@ function displayColors(){
 	$('#div4').append($colors);
 
 }
+var result = 0;
+
 function numbers() {
 	var num1= Math.floor(Math.random() * 10);
 	var num2= Math.floor(Math.random() * 10);

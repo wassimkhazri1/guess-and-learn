@@ -1,13 +1,30 @@
-#logo2{
-	margin-top: 50px;
-	margin-left: 50px; 
-	width: 100px;
+#logo2 {
+  margin-top: 10px;
+  margin-left: 50px;
+  width: 100px;
   border-radius: 50%;
 }
+
+@media screen and (max-width: 768px) {
+  #logo2 {
+    margin-top: 8px;
+    margin-left: 20px;
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #logo2 {
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 60px;
+  }
+}
+
 .navbar-brand {
     float: left;
     height: 50px;
-    padding: 5px 15px;
+    /* padding: 5px 15px; */
     font-size: 18px;
     line-height: 20px;
     background-color: #33ddff;
@@ -21,7 +38,7 @@
 }
 
 #logo{
-	width: 50px;
+	width: 40px;
 }
 h1{
 	margin-top: 0;
@@ -40,25 +57,8 @@ h3{
 #welcome{
 	background-color: #5fabe9; 
 }
-#div1{
-	width: 100%;
-	background-color: #fff18b;
-	height: 30px;
-}
-#div2{
-	width: 100%;
-	background-color:#ffe94d;
-	height: 50px;
-}
-#div3{
-	width: 100%;
-	height: 80px;
-  background-color: #5fabe9;
-  padding-left: 95px;
-}
 #div4{
   background-color: #51e951;
-  /* background: url(imgs/bg.jpg) no-repeat center ; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -67,15 +67,30 @@ h3{
 
 .imag-containe {
   position: relative;
-
-  display: inline-block;
-  
+  display: inline-block; 
 }
 .over{
   position: absolute;
-   top: 50%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 768px) {
+  .over{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .over{
+    position: absolute;
+    top: 50%;
+    left: 34%;
+    transform: translate(-30%, -50%);
+  }
 }
 .overlay-button {
   font-size: 16px;
@@ -88,9 +103,6 @@ h3{
 .overlay-button:hover {
   background-color: rgba(62, 218, 88, 0.9);
 }
-
-
-
 
 * {
   box-sizing: border-box;
@@ -109,25 +121,41 @@ h3{
   flex-direction: column;
   align-items: center; /* Centre l'image et le texte dans chaque colonne */
   width: 150px; /* Largeur de chaque colonne */
+
 }
-/* Style pour chaque colonne (chaque shape) */
-/* .column1 img{
-  width: 250px; 
-  height: 250px;
-  object-fit: cover; 
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  cursor: pointer;
-} */
 
 /* Style pour l'image */
 .imggame {
-  width: 200px; /* Ajuste la taille de l'image */
-  height: 200px;
+  width: 250px; /* Ajuste la taille de l'image */
+  height: 250px;
   object-fit: cover; /* Ajuste l'image pour éviter la distorsion */
   border: 2px solid #ccc;
   border-radius: 5px;
   cursor: pointer;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .imggame {
+    width: 200px; /* Ajuste la taille de l'image */
+    height: 200px;
+    object-fit: cover; /* Ajuste l'image pour éviter la distorsion */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .imggame {
+    width: 150px; /* Ajuste la taille de l'image */
+    height: 150px;
+    object-fit: cover; /* Ajuste l'image pour éviter la distorsion */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex
+  }
 }
 
 /* Style pour le texte sous chaque image */
@@ -142,8 +170,8 @@ h3{
   width: 60%;
   padding: 5px;
   margin-top: 30px;
-  margin-left: 30px;
-  margin-right: 30px;
+  /* margin-left: 30px;
+  margin-right: 30px; */
   
 }
 
@@ -155,8 +183,19 @@ h3{
   display: table;
 }
 #game{
-	margin-top: 100px;
+	/* margin-top: 100px; */
 	margin-left: 150px;
+}
+@media screen and (max-width: 768px) {
+  #game{
+    margin-left: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #game{
+    margin-left: 15px;
+  }
 }
 * {
   box-sizing: border-box;
@@ -531,4 +570,19 @@ body {
     height: 200px;
     opacity: 0;
   }
+}
+
+
+@keyframes slideIn {
+  from {
+      transform: translateX(-100%);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+
+.animated-title {
+  font-size: 2em;
+  animation: slideIn 2s ease-out;
 }
