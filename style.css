@@ -112,7 +112,7 @@ h3{
   display: flex;
   flex-wrap: wrap; /* Pour permettre aux animaux de se placer sur plusieurs lignes si nécessaire */
   justify-content: center; /* Centre les éléments dans le conteneur */
-  gap: 20px; /* Espace entre les images */
+  gap: 10px; /* Espace entre les images */
 }
 
 /* Style pour chaque colonne (chaque animal) */
@@ -129,17 +129,17 @@ h3{
   width: 250px; /* Ajuste la taille de l'image */
   height: 250px;
   object-fit: cover; /* Ajuste l'image pour éviter la distorsion */
-  border: 2px solid #ccc;
+  /* border: 2px solid #ccc; */
   border-radius: 5px;
   cursor: pointer;
-  display: flex;
+  display: flex
 }
 @media screen and (max-width: 768px) {
   .imggame {
     width: 200px; /* Ajuste la taille de l'image */
     height: 200px;
     object-fit: cover; /* Ajuste l'image pour éviter la distorsion */
-    border: 2px solid #ccc;
+    /* border: 2px solid #ccc; */
     border-radius: 5px;
     cursor: pointer;
     display: flex
@@ -151,7 +151,7 @@ h3{
     width: 150px; /* Ajuste la taille de l'image */
     height: 150px;
     object-fit: cover; /* Ajuste l'image pour éviter la distorsion */
-    border: 2px solid #ccc;
+    /* border: 2px solid #ccc; */
     border-radius: 5px;
     cursor: pointer;
     display: flex
@@ -185,16 +185,19 @@ h3{
 #game{
 	/* margin-top: 100px; */
 	margin-left: 150px;
+  gap: 10px;
 }
 @media screen and (max-width: 768px) {
   #game{
     margin-left: 150px;
+    gap: 10px;
   }
 }
 
 @media screen and (max-width: 480px) {
   #game{
     margin-left: 15px;
+    gap: 10px;
   }
 }
 * {
@@ -230,7 +233,7 @@ h3{
 .color{
 	width: 100px;
 	height: 100px;
-	margin-left: 55px;
+	margin-left: 5px;
 	margin-top: 50px; 
 	border-radius: 8px;
 }
@@ -238,7 +241,7 @@ h3{
   display: flex;
 	width: 150px;
 	height: 150px;
-	margin-left: 55px;
+	margin-left: 0px;
 	margin-top: 50px; 
 	border-radius: 8px;
   

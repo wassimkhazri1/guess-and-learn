@@ -489,7 +489,7 @@
 		{
 			"image" : "./img/fruits/avocado.png",
 			"name" : "avocado",
-			"voice" : "./img/audiofruit/banana.mp3"
+			"voice" : "./img/audiofruit/avocado.mp3"
 		},
 		{
 			"image" : "./img/fruits/banana.png",
@@ -600,6 +600,26 @@
 			"voice" : "./img/audiobody/back.mp3"
 		},
 		{
+			"image" : "./img/body/chin.png",
+			"name" : "chin",
+			"voice" : "./img/audiobody/chin.mp3"
+		},
+		{
+			"image" : "./img/body/ear.png",
+			"name" : "ear",
+			"voice" : "./img/audiobody/ear.mp3"
+		},
+		{
+			"image" : "./img/body/eye.png",
+			"name" : "eye",
+			"voice" : "./img/audiobody/eye.mp3"
+		},
+		{
+			"image" : "./img/body/face.png",
+			"name" : "face",
+			"voice" : "./img/audiobody/face.mp3"
+		},
+		{
 			"image" : "./img/body/finger.png",
 			"name" : "finger",
 			"voice" : "./img/audiobody/finger.mp3"
@@ -608,6 +628,16 @@
 			"image" : "./img/body/foot.png",
 			"name" : "foot",
 			"voice" : "./img/audiobody/foot.mp3"
+		},
+		{
+			"image" : "./img/body/forehead.png",
+			"name" : "forehead",
+			"voice" : "./img/audiobody/forehead.mp3"
+		},
+		{
+			"image" : "./img/body/hair.png",
+			"name" : "hair",
+			"voice" : "./img/audiobody/hair.mp3"
 		},
 		{
 			"image" : "./img/body/hand.png",
@@ -625,9 +655,24 @@
 			"voice" : "./img/audiobody/leg.mp3"
 		},
 		{
+			"image" : "./img/body/mouth.png",
+			"name" : "mouth",
+			"voice" : "./img/audiobody/mouth.mp3"
+		},
+		{
+			"image" : "./img/body/nose.png",
+			"name" : "nose",
+			"voice" : "./img/audiobody/nose.mp3"
+		},
+		{
 			"image" : "./img/body/stomach.png",
 			"name" : "stomach",
 			"voice" : "./img/audiobody/stomach.mp3"
+		},
+		{
+			"image" : "./img/body/teeth.png",
+			"name" : "teeth",
+			"voice" : "./img/audiobody/teeth.mp3"
 		},
 		{
 			"image" : "./img/body/throat.png",
@@ -638,6 +683,11 @@
 			"image" : "./img/body/toes.png",
 			"name" : "toes",
 			"voice" : "./img/audiobody/toes.mp3"
+		},
+		{
+			"image" : "./img/body/tongue.png",
+			"name" : "tongue",
+			"voice" : "./img/audiobody/tongue.mp3"
 		}
 	];	
 		 var shapesArray = [
@@ -982,6 +1032,11 @@ function playAudio(i) {
 	var url = VegetablesArray[i]["voice"];
 	new Audio(url).play();
   }
+  
+  function playAudioNumber(i){
+	var url = numbersArray[i]["voice"];
+	new Audio(url).play();
+  }
   function displayVegetables(){
 	$('#div4').html('');
 	var $title = $('<h1 class = "titleh2">Pick a job and learn how to spell its name</h1>')
@@ -991,12 +1046,12 @@ function playAudio(i) {
     while(index >= 0){
 		//var audio = jobArray[index]["voice"];
 		///console.log(audio);
-		var $vegetable = $('<div class=" column"><img id="'+index+'" onclick="playAudioVegetable(this.id)" style="background-color : white" class=" imggame animal" src="'+VegetablesArray[index]["image"]+'" alt="Colors" ></div>');
+		var $vegetable = $('<div class="column"><img id="'+index+'" onclick="playAudioVegetable(this.id)" style="background-color : white" class=" imggame animal" src="'+VegetablesArray[index]["image"]+'" alt="Colors" ></div>');
 		// var $animal = $('<div class=" column"><img id="'+index+'"/*onclick="playAudio(this.id)" style="background-color : white" class=" imggame animal" src="'+animalsArray[index]["image"]+'" alt="Colors" ></div>');
-		//var $text = $('<h2 class="animalname">'+animalsArray[index]["name"]+'</h2>');
-		//$color.append($text);
-		// $colors.prepend($color);
-		$vegetables.append($vegetable);
+		var $text = $('<h2 class="animalname">'+VegetablesArray[index]["name"]+'</h2>');
+		$vegetable.append($text);
+		$vegetables.prepend($vegetable);
+		//$vegetables.append($vegetable);
 		index--;
 	}
 
@@ -1004,6 +1059,27 @@ function playAudio(i) {
 
 }
 
+function displayNumbers(){
+	$('#div4').html('');
+	var $title = $('<h1 class = "titleh2">Pick a job and learn how to spell its name</h1>')
+	$('#div4').append($title);
+	var $numbers =  $('<div id="colors" class="row animalslist"></div>');
+	var index = numbersArray.length - 1;
+    while(index >= 0){
+		//var audio = jobArray[index]["voice"];
+		///console.log(audio);
+		var $number = $(`<div class="column"><h1 id="${index}" onclick="playAudioNumber(this.id)" style="background-color : white" class=" imggame animal">${index}</h1></div>`);
+		// var $animal = $('<div class=" column"><img id="'+index+'"/*onclick="playAudio(this.id)" style="background-color : white" class=" imggame animal" src="'+animalsArray[index]["image"]+'" alt="Colors" ></div>');
+		var $text = $('<h2 class="animalname">'+numbersArray[index]["name"]+'</h2>');
+		$number.append($text);
+		$numbers.prepend($number);
+		//$numbers.append($number);
+		index--;
+	}
+
+	$('#div4').append($numbers);
+
+}
   function displayJob(){
 	$('#div4').html('');
 	var $title = $('<h1 class = "titleh2">Pick a job and learn how to spell its name</h1>')
@@ -1015,10 +1091,10 @@ function playAudio(i) {
 		///console.log(audio);
 		var $job = $('<div class=" column"><img id="'+index+'" onclick="playAudioJob(this.id)" style="background-color : white" class=" imggame animal" src="'+jobArray[index]["image"]+'" alt="Colors" ></div>');
 		// var $animal = $('<div class=" column"><img id="'+index+'"/*onclick="playAudio(this.id)" style="background-color : white" class=" imggame animal" src="'+animalsArray[index]["image"]+'" alt="Colors" ></div>');
-		//var $text = $('<h2 class="animalname">'+animalsArray[index]["name"]+'</h2>');
-		//$color.append($text);
-		// $colors.prepend($color);
-		$jobs.append($job);
+		var $text = $('<h2 class="animalname">'+jobArray[index]["name"]+'</h2>');
+		$job.append($text);
+		$jobs.prepend($job);
+		//$jobs.append($job);
 		index--;
 	}
 
@@ -1059,10 +1135,10 @@ function displayBody(){
 		//console.log(audio);
 		var $bodyPart = $('<div class=" column"><img id="'+index+'" onclick="playAudioBody(this.id)" style="background-color : white" class=" imggame animal" src="'+bodyArray[index]["image"]+'" alt="Colors" ></div>');
 		// var $animal = $('<div class=" column"><img id="'+index+'"/*onclick="playAudio(this.id)" style="background-color : white" class=" imggame animal" src="'+animalsArray[index]["image"]+'" alt="Colors" ></div>');
-		//var $text = $('<h2 class="animalname">'+animalsArray[index]["name"]+'</h2>');
-		//$color.append($text);
-		// $colors.prepend($color);
-		$bodyParts.append($bodyPart);
+		var $text = $('<h2 class="animalname">'+bodyArray[index]["name"]+'</h2>');
+		$bodyPart.append($text);
+		$bodyParts.prepend($bodyPart);
+		//$bodyParts.append($bodyPart);
 		index--;
 	}
 
@@ -1080,10 +1156,10 @@ function displayClothes(){
 		//console.log(audio);
 		var $clothe = $('<div class=" column"><img id="'+index+'" onclick="playAudioClothe(this.id)" style="background-color : white" class=" imggame animal" src="'+clothesArray[index]["image"]+'" alt="Colors" ></div>');
 		// var $animal = $('<div class=" column"><img id="'+index+'"/*onclick="playAudio(this.id)" style="background-color : white" class=" imggame animal" src="'+animalsArray[index]["image"]+'" alt="Colors" ></div>');
-		//var $text = $('<h2 class="animalname">'+animalsArray[index]["name"]+'</h2>');
-		//$color.append($text);
-		// $colors.prepend($color);
-		$clothes.append($clothe);
+		var $text = $('<h2 class="animalname">'+clothesArray[index]["name"]+'</h2>');
+		$clothe.append($text);
+		$clothes.prepend($clothe);
+		//$clothes.append($clothe);
 		index--;
 	}
 
@@ -1102,10 +1178,10 @@ function displayShapes(){
 		//console.log(audio);
 		var $shape = $('<div class=" column"><img id="'+index+'" style="background-color : white" class=" imggame animal" src="'+shapesArray[index]["image"]+'" alt="Colors" ></div>');
 		// var $animal = $('<div class=" column"><img id="'+index+'"/*onclick="playAudio(this.id)" style="background-color : white" class=" imggame animal" src="'+animalsArray[index]["image"]+'" alt="Colors" ></div>');
-		//var $text = $('<h2 class="animalname">'+animalsArray[index]["name"]+'</h2>');
-		//$color.append($text);
-		// $colors.prepend($color);
-		$shapes.append($shape);
+		var $text = $('<h2 class="animalname">'+shapesArray[index]["name"]+'</h2>');
+		$shape.append($text);
+		$shapes.prepend($shape);
+		//$shapes.append($shape);
 		index--;
 	}
 
@@ -1123,10 +1199,10 @@ function displayFruits(){
 		//console.log(audio);
 		var $fruit = $('<div class=" column"><img id="'+index+'" onclick="playAudioFruit(this.id)" style="background-color : white" class=" imggame animal" src="'+fruitsArray[index]["image"]+'" alt="Colors" ></div>');
 		// var $animal = $('<div class=" column"><img id="'+index+'"onclick="playAudioFruit(this.id)" style="background-color : white" class=" imggame animal" src="'+animalsArray[index]["image"]+'" alt="Colors" ></div>');
-		//var $text = $('<h2 class="animalname">'+animalsArray[index]["name"]+'</h2>');
-		//$color.append($text);
-		// $colors.prepend($color);
-		$fruits.append($fruit);
+		var $text = $('<h2 class="animalname">'+fruitsArray[index]["name"]+'</h2>');
+		$fruit.append($text);
+		$fruits.prepend($fruit);
+		//$fruits.append($fruit);
 		index--;
 	}
 
@@ -1144,10 +1220,10 @@ function displayColors(){
 		///console.log(audio);
 		var $color = $('<div class=" column"><img id="'+index+'" onclick="playAudioColor(this.id)" style="background-color : white" class=" imggame animal" src="'+colorsArray[index]["image"]+'" alt="Colors" ></div>');
 		// var $animal = $('<div class=" column"><img id="'+index+'"/*onclick="playAudio(this.id)" style="background-color : white" class=" imggame animal" src="'+animalsArray[index]["image"]+'" alt="Colors" ></div>');
-		//var $text = $('<h2 class="animalname">'+animalsArray[index]["name"]+'</h2>');
-		//$color.append($text);
-		// $colors.prepend($color);
-		$colors.append($color);
+		var $text = $('<h2 class="animalname">'+colorsArray[index]["name"]+'</h2>');
+	    $color.append($text);
+		$colors.prepend($color);
+		//$colors.append($color);
 		index--;
 	}
 
@@ -1296,7 +1372,6 @@ function generateConfetti() {
     }, 3500);
 }
 
-
 function generateCircles() {
     const container = document.getElementById('animationContainer');
     
@@ -1339,32 +1414,10 @@ function colorguess(id) {
 		const failSound = new Audio('audio/basarszlk.mp3');
 		failSound.play(); // Joue le son d'applaudissements
 		$text.addClass('wrong');
-	}
-	
+	}	
 	// Ajout du texte
 	$colors.append($text);
 	$div.append($colors);
-	
-	// // Ouvre la popup et affiche l'image
-	// var modal = document.getElementById("myModal");
-	// var modalImg = document.getElementById("imgPopup");
-	// var span = document.getElementsByClassName("close")[0];
-
-	// // Affiche la modal
-	// modal.style.display = "block";
-	// modalImg.src = $img;
-
-	// // Ferme la modal quand l'utilisateur clique sur "close"
-	// span.onclick = function() {
-	//   modal.style.display = "none";
-	// };
-
-	// // Ferme la modal si l'utilisateur clique en dehors de l'image
-	// window.onclick = function(event) {
-	//   if (event.target == modal) {
-	//     modal.style.display = "none";
-	//   }
-	// };
 }
 function Game(name,array,displayGame) {
 	var instance={};
