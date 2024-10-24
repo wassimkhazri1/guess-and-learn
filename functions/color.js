@@ -150,7 +150,7 @@ function colorfunc(id) {
 			$('#clickedColorDiv').append($color1);   ////////////  à revoir
 		}
 		var i = Math.floor(Math.random() * (index + 1));
-		var $color = $('<button class="column colorguess imggame" id="' + index + '" onclick="colorguess(this.id)">' + arr[i] + '</button>');
+		var $color = $('<button class="column colorguess imggame" id="' + index + '" onclick="colorguess(this.id)"><h1>' + arr[i] + '</h1></button>');
 		colorsarray[index] = arr[i];  // Stocker la couleur dans le tableau colorsarray
 		arr.splice(i, 1);  // Retirer l'élément ajouté du tableau arr
 		// Ajouter le bouton à la div appropriée
@@ -164,8 +164,8 @@ function colorfunc(id) {
 		index--;
 	}
 	//$clickedColorDiv.append($color1);
-	 var $b1 = $('<a href="#div4"><button class="guess" onclick="myGame.displayGame()">Play</button></a>');
-	 var $b2 = $('<a href="index.html"><button class="guess">Exit</button></a>');
+	 var $b1 = $('<a href="#div4"><button class="guess btn1" onclick="myGame.displayGame()"><h1>Play</h1></button></a>');
+	 var $b2 = $('<a href="index.html"><button class="guess btn2"><h1>Exit</h1></button></a>');
 	 $('#clickedColorDiv').prepend($b1);
 	 $('#clickedColorDiv').prepend($b2);
 	//$('#clickedColorDiv').append($color1);

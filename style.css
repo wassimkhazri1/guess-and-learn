@@ -608,10 +608,10 @@ body {
 }
 #clickedColorDiv{
   height: 2000px; /* Example height to demonstrate scrolling */
-  padding: 20px;
+  padding-top: 150px;
 }
 .btn {
-  height: 50px;
+  height: 100px;
   width: 100px;
   display: inline-block;
   padding: 10px 20px;
@@ -626,4 +626,15 @@ body {
   transition: background-color 0.3s ease;
   
 }
-
+.btn1:hover {
+  background-color: #0056b3;
+}
+.btn2:hover {
+  background-color: #d8b621;
+}
+.btn1,.btn2 {
+  padding: 0px 30px 0px 0px;
+}
+button.column.colorguess.imggame {
+  padding: 0px 30px 0px 0px;
+}
