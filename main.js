@@ -3,23 +3,18 @@ function add() {
 	$('.answer').remove();
 	var $div = $('#div4');
 	var $numbers =  $('<div class="answer container"></div>');
-	var $text = $('<p></p>');
-	var $img = $('')
 	if( $('#1').val() == result ){
 		// Crée l'élément audio pour le son d'applaudissements
 		const applauseSound = new Audio('audio/applause.mp3');
 		applauseSound.play(); // Joue le son d'applaudissements
-		// generateCircles();
-		// generateConfetti();	
+		generateCircles();
+		generateConfetti();	
 
 	}else{
 		// Crée l'élément audio pour le son fail
 		const failSound = new Audio('audio/basarszlk.mp3');
 		failSound.play(); // Joue le son d'applaudissements
-		//$img =  $('<img src="imgs/wrong.jpg">');
 	}
-	$numbers.append($text);
-	$numbers.append($img);
 	$div.append($numbers);	
 }
 
@@ -52,11 +47,11 @@ function generateAnimation(type) {
 
 function generateConfetti() {
     const container = document.getElementById('animationContainer');
-    
+
 	    // Crée l'élément audio pour le son d'applaudissements
 		const applauseSound = new Audio('audio/applause.mp3');
 		applauseSound.play(); // Joue le son d'applaudissements
-
+        generateCircles();
     for (let i = 0; i < 50; i++) { // 50 confettis
         let confetti = document.createElement('div');
         confetti.classList.add('confetti');
@@ -68,7 +63,11 @@ function generateConfetti() {
         confetti.style.left = Math.random() * 100 + 'vw';
         confetti.style.animationDelay = Math.random() * 1 + 's';
         
-        container.appendChild(confetti);
+        if (container) {
+            container.appendChild(confetti);
+        } else {
+            console.error("Element 'container' not found in the DOM");
+        }
         
         setTimeout(() => {
             confetti.remove();

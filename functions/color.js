@@ -119,6 +119,7 @@ function playAudioColor(i) {
 var colorsarray = [1,2,3,4];
 var colorId = undefined;
 function colorfunc(id) {
+	$('#clickedColorDiv').html('');  // Vider le div 'colorsguess' avant d'ajouter de nouveaux boutons
 	colorId = id;
 	var arr = [colorsArr[id]];  // Le bouton cliqué est ajouté en premier dans le tableau arr
 	var newarr = [];
@@ -144,6 +145,9 @@ function colorfunc(id) {
 	var index = arr.length - 1;
 	var $color1 = $('<button  class="column color1" id="'+ colorId +'" style="background-color: ' + colorsArr[colorId] +'"></button>');
 	while (index >= 0) {
+		if(index == 0){
+			$('#clickedColorDiv').append($color1);   ////////////  à revoir
+		}
 		var i = Math.floor(Math.random() * (index + 1));
 		var $color = $('<button class="column colorguess imggame" id="' + index + '" onclick="colorguess(this.id)">' + arr[i] + '</button>');
 		colorsarray[index] = arr[i];  // Stocker la couleur dans le tableau colorsarray
@@ -151,15 +155,19 @@ function colorfunc(id) {
 		// Ajouter le bouton à la div appropriée
 		if (index === id) {
 			$clickedColorDiv.append($color);  // Ajouter le bouton cliqué dans clickedColorDiv
+			
 		} else {
 			$colors.append($color);  // Ajouter les autres boutons dans colorsguess
 		}
 		
 		index--;
 	}
-	// var $b1 = $('<button  onclick="myGame.displayGame()">Play</button>');
-	// var $b2 = $('<a href="index.html"><button>Exit</button></a>');
-	$('#clickedColorDiv').append($color1);
+	//$clickedColorDiv.append($color1);
+	 var $b1 = $('<button class="guess" onclick="myGame.displayGame()">Play</button>');
+	 var $b2 = $('<a href="index.html"><button class="guess">Exit</button></a>');
+	 $('#clickedColorDiv').prepend($b1);
+	 $('#clickedColorDiv').prepend($b2);
+	//$('#clickedColorDiv').append($color1);
 	$('#clickedColorDiv').append($colors);  
 	// $('#clickedColorDiv').append($b1);
 	// $('#clickedColorDiv').append($b2);  
@@ -169,25 +177,19 @@ function colorguess(id) {
 	$('.answer').remove();
 	var $div = $('#div4');
 	// var $colors =  $('<div class="answer container" id="animationContainer"></div>');
-	var $colors =  $('<div id="animationContainer"></div>');
+	 var $colors =  $('<div id="animationContainer"></div>');
 
 	// Logique pour vérifier la réponse
 	if (colorsArr[colorId] === colorsarray[id]) {
+		//add();  //contain  generateConfetti and generateCircles functions
 		generateConfetti();
-		generateCircles();
-		var $b1 = $(`<button  onclick="myGame.displayGame()">Play</button>`);
-		var $b2 = $(`<a href="index.html"><button >Exit</button></a>`);
-		$div.prepend($b1);
-		$div.prepend($b2);
-		//generateAnimation('flower');
-		//generateAnimation('star'); // Tu peux remplacer 'star' par 'flower' si tu veux des fleurs
+		//generateCircles(); a été deja appelée dans generateConfetti
 	} else {
 		// Crée l'élément audio pour le son fail
 		const failSound = new Audio('audio/basarszlk.mp3');
 		failSound.play(); // Joue le son d'applaudissements
 	}	
-	// Ajout du texte
-	$colors.append($text);
+
 	$div.append($colors);
 }
 function Game(name,array,displayGame) {

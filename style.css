@@ -262,6 +262,14 @@ h3{
 	/* margin-top: 100px; */
 	border-radius: 8px;
 }
+.guess{
+	width: 100px;
+	height: 50px;
+  margin-left: 50px;
+  background-color: #51e951;
+	/* margin-top: 100px; */
+	border-radius: 30px;
+}
 
 .answer {
   margin-top: 30px;
