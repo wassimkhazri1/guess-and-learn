@@ -250,8 +250,8 @@ h3{
 .colorguess{
 	width: 100px;
 	height: 50px;
-	margin-left: 200px;
-	margin-top: 100px; 
+  margin-left: 50px;
+	/* margin-top: 100px; */
 	border-radius: 8px;
 }
 
