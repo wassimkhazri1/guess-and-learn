@@ -81,8 +81,9 @@ function colors() {
     // Boucler sur les couleurs et les ajouter
     var index = colorsArr.length - 1;
     while (index >= 0) {
-        var $color = $('<button class="column color" id="' + index + '" onclick="colorfunc(this.id)" style="background-color: ' + this.array[index] + '"></button>');
-        $colors.append($color);
+        // var $color = $('<button class="column color" id="' + index + '" onclick="colorfunc(this.id)" style="background-color: ' + this.array[index] + '"></button>');
+		var $color = $('<a  href="#clickedColorDiv" class="column color btn" id="' + index + '" onclick="colorfunc(this.id)" style="background-color: ' + this.array[index] + ';  display:inline-block"></a>');
+		$colors.append($color);
         index--;
     }
 
@@ -105,7 +106,7 @@ function playAudioColor(i) {
     while(index >= 0){
 		var audio = colorsArray[index]["voice"];
 		///console.log(audio);
-		var $color = $('<div class=" column"><img id="'+index+'" onclick="playAudioColor(this.id)" style="background-color : white" class=" imggame animal" src="'+colorsArray[index]["image"]+'" alt="Colors" ></div>');
+		var $color = $('<div class="column"><img id="'+index+'" onclick="playAudioColor(this.id)" style="background-color : white" class=" imggame animal" src="'+colorsArray[index]["image"]+'" alt="Colors"></div>');
 		// var $animal = $('<div class=" column"><img id="'+index+'"/*onclick="playAudio(this.id)" style="background-color : white" class=" imggame animal" src="'+animalsArray[index]["image"]+'" alt="Colors" ></div>');
 		var $text = $('<h2 class="animalname">'+colorsArray[index]["name"]+'</h2>');
 	    $color.append($text);
@@ -163,7 +164,7 @@ function colorfunc(id) {
 		index--;
 	}
 	//$clickedColorDiv.append($color1);
-	 var $b1 = $('<button class="guess" onclick="myGame.displayGame()">Play</button>');
+	 var $b1 = $('<a href="#div4"><button class="guess" onclick="myGame.displayGame()">Play</button></a>');
 	 var $b2 = $('<a href="index.html"><button class="guess">Exit</button></a>');
 	 $('#clickedColorDiv').prepend($b1);
 	 $('#clickedColorDiv').prepend($b2);

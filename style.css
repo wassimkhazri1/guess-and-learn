@@ -58,6 +58,8 @@ h3{
 	background-color: #5fabe9; 
 }
 #div4{
+  height: 2000px; /* Example height to demonstrate scrolling */
+  padding: 20px;
   background-color: #51e951;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -600,8 +602,28 @@ body {
       transform: translateX(0);
   }
 }
-
 .animated-title {
   font-size: 2em;
   animation: slideIn 2s ease-out;
 }
+#clickedColorDiv{
+  height: 2000px; /* Example height to demonstrate scrolling */
+  padding: 20px;
+}
+.btn {
+  height: 50px;
+  width: 100px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  /* color: white; */
+  /* background-color: #007bff; */
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
