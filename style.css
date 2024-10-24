@@ -237,6 +237,14 @@ h3{
 	margin-top: 50px; 
 	border-radius: 8px;
 }
+.color1{
+	width: 100px;
+	height: 100px;
+	margin-left: 40%;
+	margin-top: 50px; 
+	border-radius: 8px;
+}
+
 .animal{
   display: flex;
 	width: 150px;

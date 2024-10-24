@@ -142,7 +142,7 @@ function colorfunc(id) {
 	var $colors = $('#colorsguess');
 	var $clickedColorDiv = $('#clickedColorDiv');  // Div où le bouton cliqué sera ajouté
 	var index = arr.length - 1;
-	var $color1 = $('<button  class="column color" id="'+ colorId +'" style="background-color: ' + colorsArr[colorId] +'"></button>');
+	var $color1 = $('<button  class="column color1" id="'+ colorId +'" style="background-color: ' + colorsArr[colorId] +'"></button>');
 	while (index >= 0) {
 		var i = Math.floor(Math.random() * (index + 1));
 		var $color = $('<button class="column colorguess imggame" id="' + index + '" onclick="colorguess(this.id)">' + arr[i] + '</button>');
