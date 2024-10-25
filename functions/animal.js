@@ -332,4 +332,73 @@ function playAudio(i) {
 	}
 
 	$('#div4').append($animals);
-}  
+} 
+
+var animalarray = [1,2,3,4];
+var animalId = undefined;
+function animalfunc() {
+	$('#div4').html('');  // Vider le div 'colorsguess' avant d'ajouter de nouveaux boutons
+	var ilength = animalsArray.length - 1;
+	animalId = Math.floor(Math.random() * ilength);
+	var arr = [animalsArray[animalId]["name"]];  // Le bouton cliqué est ajouté en premier dans le tableau arr
+	 var newarr = [];
+	
+	 //Ajout des autres couleurs dans le tableau newarr
+	 for (var i = 0; i < animalsArray.length; i++) {
+	 	newarr.push(animalsArray[i]["name"]);
+	 };
+	  console.log(arr);
+	  console.log(newarr);
+	 newarr.splice(animalId, 1);  // Retirer la couleur sélectionnée du tableau newarr
+	 console.log(newarr);
+	// Ajouter des couleurs aléatoires de newarr dans arr jusqu'à ce qu'il y ait 4 éléments
+	for (var i = newarr.length - 1; arr.length < 4; i--) {
+		var index = Math.floor(Math.random() * i);
+		arr.push(newarr[index]);
+		newarr.splice(index, 1);
+	};
+	console.log(arr);
+	$('#colorsguess').html('');  // Vider le div 'colorsguess' avant d'ajouter de nouveaux boutons
+	$('.answer').remove();  // Retirer les anciennes réponses si elles existent
+	var $div4 = $('#div4');  // Div où le bouton cliqué sera ajouté
+	var index = arr.length - 1;
+	var $color1 = $('<div class=" column"><img id="'+animalId+'"onclick="playAudio(this.id)" style="background-color : white" class=" imggame animal" src="'+animalsArray[animalId]["image"]+'" alt="Animals" ></div>');
+	while (index >= 0) {
+		if(index == 0){
+			$div4.prepend($color1);   ////////////  à revoir
+		}
+		var i = Math.floor(Math.random() * (index + 1));
+		var $color = $('<button class="column colorguess imggame" id="' + index + '" onclick="animalguess(this.id)"><h1>' + arr[i] + '</h1></button>');
+		animalarray[index] = arr[i];  // Stocker la couleur dans le tableau colorsarray
+		arr.splice(i, 1);  // Retirer l'élément ajouté du tableau arr
+		$div4.append($color); // ajouter le bouton au div4
+		index--;
+	}
+	var $b1 = $('<a href="#div4"><button class="guess btn1" onclick="myGameAnimal.displayGame()"><h1>Play</h1></button></a>');
+	var $b2 = $('<a href="index.html"><button class="guess btn2"><h1>Exit</h1></button></a>');
+	$div4.prepend($b1);
+	$div4.prepend($b2);
+}
+function animalguess(id) {
+	$('.answer').remove();
+	var $div = $('#div4');
+	 var $colors =  $('<div id="animationContainer"></div>');
+	// Logique pour vérifier la réponse
+	if (animalsArray[animalId]["name"] === animalarray[id]) {
+		generateConfetti();
+	} else {
+		// Crée l'élément audio pour le son fail
+		const failSound = new Audio('audio/basarszlk.mp3');
+		failSound.play(); // Joue le son d'applaudissements
+	}	
+
+	$div.append($colors);
+}
+function Game(name,array,displayGame) {
+	var instance={};
+	instance.name = name;
+	instance.array = array;
+	instance.displayGame = displayGame;
+	return instance;
+};
+var myGameAnimal = new Game('Colors', animalarray, animalfunc);

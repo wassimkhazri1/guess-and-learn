@@ -1,66 +1,87 @@
 var shapesArray = [
     {
-        "image":"./img/shape/circle.png"
+        "image":"./img/shape/circle.png",
+        "name" : "circle"
     },
     {
-        "image":"./img/shape/cone.png"
+        "image":"./img/shape/cone.png",
+        "name" : "cone"
     },
     {
-        "image":"./img/shape/cube.png"
+        "image":"./img/shape/cube.png",
+        "name" : "cube"
     },
     {
-        "image":"./img/shape/cylinder.png"
+        "image":"./img/shape/cylinder.png",
+        "name" : "cylinder"
     },
     {
-        "image":"./img/shape/decagon.png"
+        "image":"./img/shape/decagon.png",
+        "name" : "decagon"
     },
     {
-        "image":"./img/shape/ellipse.png"
+        "image":"./img/shape/ellipse.png",
+        "name" : "ellipse"
     },
     {
-        "image":"./img/shape/heart.png"
+        "image":"./img/shape/heart.png",
+        "name" : "heart"
     },
     {
-        "image":"./img/shape/heptagon.png"
+        "image":"./img/shape/heptagon.png",
+        "name" : "heptagon"
     },
     {
-        "image":"./img/shape/hexagon.png"
+        "image":"./img/shape/hexagon.png",
+        "name" : "hexagon"
     },
     {
-        "image":"./img/shape/octagon.png"
+        "image":"./img/shape/octagon.png",
+        "name" : "octagon"
     },
     {
-        "image":"./img/shape/parallelogram.png"
+        "image":"./img/shape/parallelogram.png",
+        "name" : "parallelogram"
     },
     {
-        "image":"./img/shape/pentagon.png"
+        "image":"./img/shape/pentagon.png",
+        "name" : "pentagon"
     },
     {
-        "image":"./img/shape/reclangularprism.png"
+        "image":"./img/shape/reclangularprism.png",
+        "name" : "reclangularprism"
     },
     {
-        "image":"./img/shape/rectangle.png"
+        "image":"./img/shape/rectangle.png",
+        "name" : "rectangle"
     },
     {
-        "image":"./img/shape/rhombus.png"
+        "image":"./img/shape/rhombus.png",
+        "name" : "rhombus"
     },
     {
-        "image":"./img/shape/righttriangle.png"
+        "image":"./img/shape/righttriangle.png",
+        "name" : "righttriangle"
     },
     {
-        "image":"./img/shape/square.png"
+        "image":"./img/shape/square.png",
+        "name" : "square"
     },
     {
-        "image":"./img/shape/star.png"
+        "image":"./img/shape/star.png",
+        "name" : "star"
     },
     {
-        "image":"./img/shape/trapezoid.png"
+        "image":"./img/shape/trapezoid.png",
+        "name" : "trapezoid"
     },
     {
-        "image":"./img/shape/triangle.png"
+        "image":"./img/shape/triangle.png",
+        "name" : "triangle"
     },
     {
-        "image":"./img/shape/circle.png"
+        "image":"./img/shape/circle.png",
+        "name" : "circle"
     }
 ];
 function displayShapes(){

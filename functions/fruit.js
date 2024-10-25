@@ -5,11 +5,6 @@ var fruitsArray =[
         "voice" : "./img/audiofruit/apple.mp3"
     },
     {
-        "image" : "./img/fruits/avocado.png",
-        "name" : "avocado",
-        "voice" : "./img/audiofruit/avocado.mp3"
-    },
-    {
         "image" : "./img/fruits/banana.png",
         "name" : "banana",
         "voice" : "./img/audiofruit/banana.mp3"
@@ -20,34 +15,9 @@ var fruitsArray =[
         "voice": "./img/audiofruit/cherry.mp3"
     },
     {
-        "image" : "./img/fruits/chikoo.png",
-        "name" : "chikoo",
-        "voice" : "./img/audiofruit/chikoo.mp3"
-    },
-    {
-        "image" : "./img/fruits/custardapple.png",
-        "name" : "custardapple",
-        "voice" : "./img/audiofruit/custardapple.mp3"
-    },
-    {
         "image" : "./img/fruits/grapes.png",
         "name" : "grapes",
         "voice" : "./img/audiofruit/grapes.mp3"
-    },
-    {
-        "image" : "./img/fruits/guava.png",
-        "name" : "guava",
-        "voice" : "./img/audiofruit/guava.mp3"
-    },
-    {
-        "image" : "./img/fruits/jackfruit.png",
-        "name" : "jackfruit",
-        "voice" : "./img/audiofruit/jackfruit.mp3"
-    },
-    {
-        "image" : "./img/fruits/lime.png",
-        "name" : "lime",
-        "voice" : "./img/audiofruit/lemon.mp3"
     },
     {
         "image" : "./img/fruits/lemon.png",
@@ -55,24 +25,9 @@ var fruitsArray =[
         "voice" : "./img/audiofruit/lemon.mp3"
     },
     {
-        "image" : "./img/fruits/mango.png",
-        "name" : "mango",
-        "voice" : "./img/audiofruit/mango.mp3"
-    },
-    {
         "image" : "./img/fruits/orange.png",
         "name" : "orange",
         "voice" : "./img/audiofruit/orange.mp3"
-    },
-    {
-        "image" : "./img/fruits/papaya.png",
-        "name" : "papaya",
-        "voice" : "./img/audiofruit/papaya.mp3"
-    },
-    {
-        "image" : "./img/fruits/peach.png",
-        "name" : "peach",
-        "voice" : "./img/audiofruit/peach.mp3"
     },
     {
         "image" : "./img/fruits/pear.png",
@@ -90,20 +45,9 @@ var fruitsArray =[
         "voice" : "./img/audiofruit/plum.mp3"
     },
     {
-        "image" : "./img/fruits/pomegranate.png",
-        "name" : "pomegranate",
-        "voice" : "./img/audiofruit/pomegranate.mp3"
-    },
-    {
         "image" : "./img/fruits/strawberry.png",
         "name" : "strawberry",
         "voice" : "./img/audiofruit/strawberry.mp3"
-
-    },
-    {
-        "image" : "./img/fruits/watermelon.png",
-        "name" : "watermelon",
-        "voice" : "./img/audiofruit/watermelon.mp3"
     }
     ];
     function playAudioFruit(i) {

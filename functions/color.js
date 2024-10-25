@@ -25,11 +25,6 @@ var colorsArray = [
         "voice":"./img/audiocolor/green.mp3"
     },
     {
-        "image":"./img/colors/magenta.png",
-        "name" : "magenta",
-        "voice":"./img/audiocolor/magenta.mp3"
-    },
-    {
         "image":"./img/colors/orange.png",
         "name" : "orange",
         "voice":"./img/audiocolor/orange.mp3"
@@ -81,7 +76,6 @@ function colors() {
     // Boucler sur les couleurs et les ajouter
     var index = colorsArr.length - 1;
     while (index >= 0) {
-        // var $color = $('<button class="column color" id="' + index + '" onclick="colorfunc(this.id)" style="background-color: ' + this.array[index] + '"></button>');
 		var $color = $('<a  href="#clickedColorDiv" class="column color btn" id="' + index + '" onclick="colorfunc(this.id)" style="background-color: ' + this.array[index] + ';  display:inline-block"></a>');
 		$colors.append($color);
         index--;
@@ -104,87 +98,66 @@ function playAudioColor(i) {
 	var $colors =  $('<div id="colors" class="row animalslist"></div>');
 	var index = colorsArray.length - 1;
     while(index >= 0){
-		var audio = colorsArray[index]["voice"];
-		///console.log(audio);
 		var $color = $('<div class="column"><img id="'+index+'" onclick="playAudioColor(this.id)" style="background-color : white" class=" imggame animal" src="'+colorsArray[index]["image"]+'" alt="Colors"></div>');
-		// var $animal = $('<div class=" column"><img id="'+index+'"/*onclick="playAudio(this.id)" style="background-color : white" class=" imggame animal" src="'+animalsArray[index]["image"]+'" alt="Colors" ></div>');
 		var $text = $('<h2 class="animalname">'+colorsArray[index]["name"]+'</h2>');
 	    $color.append($text);
 		$colors.prepend($color);
-		//$colors.append($color);
 		index--;
 	}
 	$('#div4').append($colors);
 }
 
-var colorsarray = [1,2,3,4];
+var colorarray = [1,2,3,4];
 var colorId = undefined;
-function colorfunc(id) {
-	$('#clickedColorDiv').html('');  // Vider le div 'colorsguess' avant d'ajouter de nouveaux boutons
-	colorId = id;
-	var arr = [colorsArr[id]];  // Le bouton cliqué est ajouté en premier dans le tableau arr
-	var newarr = [];
+function colorfunc() {
+	$('#div4').html('');  // Vider le div 'colorsguess' avant d'ajouter de nouveaux boutons
+	var clength = colorsArray.length - 1;
+	colorId = Math.floor(Math.random() * clength);
+	var arr = [colorsArray[colorId]["name"]];  // Le bouton cliqué est ajouté en premier dans le tableau arr
+	 var newarr = [];
 	
-	// Ajout des autres couleurs dans le tableau newarr
-	for (var i = 0; i < colorsArr.length; i++) {
-		newarr.push(colorsArr[i]);
-	};
-	
-	newarr.splice(id, 1);  // Retirer la couleur sélectionnée du tableau newarr
-	
+	 //Ajout des autres couleurs dans le tableau newarr
+	 for (var i = 0; i < colorsArray.length; i++) {
+	 	newarr.push(colorsArray[i]["name"]);
+	 };
+	  console.log(arr);
+	  console.log(newarr);
+	 newarr.splice(colorId, 1);  // Retirer la couleur sélectionnée du tableau newarr
+	 console.log(newarr);
 	// Ajouter des couleurs aléatoires de newarr dans arr jusqu'à ce qu'il y ait 4 éléments
 	for (var i = newarr.length - 1; arr.length < 4; i--) {
 		var index = Math.floor(Math.random() * i);
 		arr.push(newarr[index]);
 		newarr.splice(index, 1);
 	};
-	
-	$('#colorsguess').html('');  // Vider le div 'colorsguess' avant d'ajouter de nouveaux boutons
+	console.log(arr);
 	$('.answer').remove();  // Retirer les anciennes réponses si elles existent
-	var $colors = $('#colorsguess');
-	var $clickedColorDiv = $('#clickedColorDiv');  // Div où le bouton cliqué sera ajouté
+	var $div4 = $('#div4');  // Div où le bouton cliqué sera ajouté
 	var index = arr.length - 1;
-	var $color1 = $('<button  class="column color1" id="'+ colorId +'" style="background-color: ' + colorsArr[colorId] +'"></button>');
+	var $color1 = $('<div class=" column"><img id="'+colorId+'"onclick="playAudioColor(this.id)" style="background-color : white" class=" imggame animal" src="'+colorsArray[colorId]["image"]+'" alt="Colors" ></div>');
 	while (index >= 0) {
 		if(index == 0){
-			$('#clickedColorDiv').append($color1);   ////////////  à revoir
+			$div4.prepend($color1);   ////////////  à revoir
 		}
 		var i = Math.floor(Math.random() * (index + 1));
 		var $color = $('<button class="column colorguess imggame" id="' + index + '" onclick="colorguess(this.id)"><h1>' + arr[i] + '</h1></button>');
-		colorsarray[index] = arr[i];  // Stocker la couleur dans le tableau colorsarray
+		colorarray[index] = arr[i];  // Stocker la couleur dans le tableau colorsarray
 		arr.splice(i, 1);  // Retirer l'élément ajouté du tableau arr
-		// Ajouter le bouton à la div appropriée
-		if (index === id) {
-			$clickedColorDiv.append($color);  // Ajouter le bouton cliqué dans clickedColorDiv
-			
-		} else {
-			$colors.append($color);  // Ajouter les autres boutons dans colorsguess
-		}
-		
+		$div4.append($color); // ajouter le bouton au div4
 		index--;
 	}
-	//$clickedColorDiv.append($color1);
-	 var $b1 = $('<a href="#div4"><button class="guess btn1" onclick="myGame.displayGame()"><h1>Play</h1></button></a>');
-	 var $b2 = $('<a href="index.html"><button class="guess btn2"><h1>Exit</h1></button></a>');
-	 $('#clickedColorDiv').prepend($b1);
-	 $('#clickedColorDiv').prepend($b2);
-	//$('#clickedColorDiv').append($color1);
-	$('#clickedColorDiv').append($colors);  
-	// $('#clickedColorDiv').append($b1);
-	// $('#clickedColorDiv').append($b2);  
+	var $b1 = $('<a href="#div4"><button class="guess btn1" onclick="myGameColor.displayGame()"><h1>Play</h1></button></a>');
+	var $b2 = $('<a href="index.html"><button class="guess btn2"><h1>Exit</h1></button></a>');
+	$div4.prepend($b1);
+	$div4.prepend($b2);
 }
 function colorguess(id) {
-	//$('#clickedColorDiv').remove();
 	$('.answer').remove();
 	var $div = $('#div4');
-	// var $colors =  $('<div class="answer container" id="animationContainer"></div>');
 	 var $colors =  $('<div id="animationContainer"></div>');
-
 	// Logique pour vérifier la réponse
-	if (colorsArr[colorId] === colorsarray[id]) {
-		//add();  //contain  generateConfetti and generateCircles functions
+	if (colorsArray[colorId]["name"] === colorarray[id]) {
 		generateConfetti();
-		//generateCircles(); a été deja appelée dans generateConfetti
 	} else {
 		// Crée l'élément audio pour le son fail
 		const failSound = new Audio('audio/basarszlk.mp3');
@@ -200,4 +173,4 @@ function Game(name,array,displayGame) {
 	instance.displayGame = displayGame;
 	return instance;
 };
-var myGame = new Game('Colors', colorsArr, colors);
+var myGameColor = new Game('Colors', colorarray, colorfunc);

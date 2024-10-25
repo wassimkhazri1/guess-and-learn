@@ -115,7 +115,6 @@ function displayClothes(){
 		//var audio = clothesArray[index]["voice"];
 		//console.log(audio);
 		var $clothe = $('<div class=" column"><img id="'+index+'" onclick="playAudioClothe(this.id)" style="background-color : white" class=" imggame animal" src="'+clothesArray[index]["image"]+'" alt="Colors" ></div>');
-		// var $animal = $('<div class=" column"><img id="'+index+'"/*onclick="playAudio(this.id)" style="background-color : white" class=" imggame animal" src="'+animalsArray[index]["image"]+'" alt="Colors" ></div>');
 		var $text = $('<h2 class="animalname">'+clothesArray[index]["name"]+'</h2>');
 		$clothe.append($text);
 		$clothes.prepend($clothe);
@@ -126,3 +125,71 @@ function displayClothes(){
 	$('#div4').append($clothes);
 
 }
+
+var clothearray = [1,2,3,4];
+var clotheId = undefined;
+function clothefunc() {
+	$('#div4').html('');  // Vider le div 'colorsguess' avant d'ajouter de nouveaux boutons
+	var clength = clothesArray.length - 1;
+	clotheId = Math.floor(Math.random() * clength);
+	var arr = [clothesArray[clotheId]["name"]];  // Le bouton cliqué est ajouté en premier dans le tableau arr
+	 var newarr = [];
+	
+	 //Ajout des autres clothe dans le tableau newarr
+	 for (var i = 0; i < clothesArray.length; i++) {
+	 	newarr.push(clothesArray[i]["name"]);
+	 };
+	  console.log(arr);
+	  console.log(newarr);
+	 newarr.splice(clotheId, 1);  // Retirer la couleur sélectionnée du tableau newarr
+	 console.log(newarr);
+	// Ajouter des couleurs aléatoires de newarr dans arr jusqu'à ce qu'il y ait 4 éléments
+	for (var i = newarr.length - 1; arr.length < 4; i--) {
+		var index = Math.floor(Math.random() * i);
+		arr.push(newarr[index]);
+		newarr.splice(index, 1);
+	};
+	console.log(arr);
+	$('.answer').remove();  // Retirer les anciennes réponses si elles existent
+	var $div4 = $('#div4');  // Div où le bouton cliqué sera ajouté
+	var index = arr.length - 1;
+	var $clothe1 = $('<div class=" column"><img id="'+clotheId+'"onclick="playAudio(this.id)" style="background-color : white" class=" imggame animal" src="'+clothesArray[clotheId]["image"]+'" alt="Clothes" ></div>');
+	while (index >= 0) {
+		if(index == 0){
+			$div4.prepend($clothe1);
+		}
+		var i = Math.floor(Math.random() * (index + 1));
+		var $clothe = $('<button class="column colorguess imggame" id="' + index + '" onclick="clotheguess(this.id)"><h1>' + arr[i] + '</h1></button>');
+		clothearray[index] = arr[i];  // Stocker la couleur dans le tableau colorsarray
+		arr.splice(i, 1);  // Retirer l'élément ajouté du tableau arr
+		$div4.append($clothe); // ajouter le bouton au div4
+		index--;
+	}
+	var $b1 = $('<a href="#div4"><button class="guess btn1" onclick="myGameClothe.displayGame()"><h1>Play</h1></button></a>');
+	var $b2 = $('<a href="index.html"><button class="guess btn2"><h1>Exit</h1></button></a>');
+	$div4.prepend($b1);
+	$div4.prepend($b2);
+}
+function clotheguess(id) {
+	$('.answer').remove();
+	var $div = $('#div4');
+	 var $clothes =  $('<div id="animationContainer"></div>');
+	// Logique pour vérifier la réponse
+	if (clothesArray[clotheId]["name"] === clothearray[id]) {
+		generateConfetti();
+	} else {
+		// Crée l'élément audio pour le son fail
+		const failSound = new Audio('audio/basarszlk.mp3');
+		failSound.play(); // Joue le son d'applaudissements
+	}	
+
+	$div.append($clothes);
+}
+function Game(name,array,displayGame) {
+	var instance={};
+	instance.name = name;
+	instance.array = array;
+	instance.displayGame = displayGame;
+	return instance;
+};
+var myGameClothe = new Game('Clothes', clothearray, clothefunc);
