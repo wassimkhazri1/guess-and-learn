@@ -125,6 +125,15 @@ h3{
   width: 150px; /* Largeur de chaque colonne */
 
 }
+.btn-space{
+ margin-right: 10px; /*Espace entre les boutons */
+ border-radius: 8px; 
+}
+.btn-space h1{
+  /* margin-right: 10px; Espace entre les boutons */
+  margin: 0px 0px 0px 0px;
+}
+
 
 /* Style pour l'image */
 .imggame {
@@ -637,4 +646,34 @@ body {
 }
 button.column.colorguess.imggame {
   padding: 0px 30px 0px 0px;
+}
+
+
+/* 75% {
+  font-size: 300%;
+  margin-left: 25%;
+  width: 150%;
+} */
+
+.p1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }

@@ -110,7 +110,7 @@ function jobfunc() {
 			$div4.prepend($job1);
 		}
 		var i = Math.floor(Math.random() * (index + 1));
-		var $job = $('<button class="column colorguess imggame" id="' + index + '" onclick="jobguess(this.id)"><h1>' + arr[i] + '</h1></button>');
+		var $job = $('<button class="btn-space" id="' + index + '" onclick="jobguess(this.id)"><h1>' + arr[i] + '</h1></button>');
 		jobarray[index] = arr[i];  // Stocker la couleur dans le tableau colorsarray
 		arr.splice(i, 1);  // Retirer l'élément ajouté du tableau arr
 		$div4.append($job); // ajouter le bouton au div4

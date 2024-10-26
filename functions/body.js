@@ -159,7 +159,7 @@ function bodyfunc() {
 			$div4.prepend($body1);
 		}
 		var i = Math.floor(Math.random() * (index + 1));
-		var $body = $('<button class="column colorguess imggame" id="' + index + '" onclick="bodyguess(this.id)"><h1>' + arr[i] + '</h1></button>');
+		var $body = $('<button class="btn-space" id="' + index + '" onclick="bodyguess(this.id)"><h1>' + arr[i] + '</h1></button>');
 		bodyarray[index] = arr[i];  // Stocker la couleur dans le tableau colorsarray
 		arr.splice(i, 1);  // Retirer l'élément ajouté du tableau arr
 		$div4.append($body); // ajouter le bouton au div4

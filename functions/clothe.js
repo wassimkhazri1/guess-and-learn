@@ -159,7 +159,7 @@ function clothefunc() {
 			$div4.prepend($clothe1);
 		}
 		var i = Math.floor(Math.random() * (index + 1));
-		var $clothe = $('<button class="column colorguess imggame" id="' + index + '" onclick="clotheguess(this.id)"><h1>' + arr[i] + '</h1></button>');
+		var $clothe = $('<button class="btn-space" id="' + index + '" onclick="clotheguess(this.id)"><h1>' + arr[i] + '</h1></button>');
 		clothearray[index] = arr[i];  // Stocker la couleur dans le tableau colorsarray
 		arr.splice(i, 1);  // Retirer l'élément ajouté du tableau arr
 		$div4.append($clothe); // ajouter le bouton au div4

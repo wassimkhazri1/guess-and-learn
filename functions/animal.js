@@ -368,7 +368,7 @@ function animalfunc() {
 			$div4.prepend($color1);   ////////////  à revoir
 		}
 		var i = Math.floor(Math.random() * (index + 1));
-		var $color = $('<button class="column colorguess imggame" id="' + index + '" onclick="animalguess(this.id)"><h1>' + arr[i] + '</h1></button>');
+		var $color = $('<button class="btn-space" id="' + index + '" onclick="animalguess(this.id)"><h1>' + arr[i] + '</h1></button>');
 		animalarray[index] = arr[i];  // Stocker la couleur dans le tableau colorsarray
 		arr.splice(i, 1);  // Retirer l'élément ajouté du tableau arr
 		$div4.append($color); // ajouter le bouton au div4
