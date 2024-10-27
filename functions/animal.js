@@ -1,311 +1,311 @@
 var animalsArray = [
 	{
-		"image":"./imgs/ant.png",
+		"image":"./img/animals/ant.png",
 		"name":"ant",
 		"voice":"./img/audioanimal/ant.mp3"
 	},		
 	{
-		"image":"./imgs/bear.png",
+		"image":"./img/animals/bear.png",
 		"name":"bear",
 		"voice":"./img/audioanimal/bear.mp3"
     },
     {
-		"image":"./imgs/bee.png",
+		"image":"./img/animals/bee.png",
 		"name":"bee",
 		"voice":"./img/audioanimal/bee.mp3"
     },
     {
-		"image":"./imgs/bird.png",
+		"image":"./img/animals/bird.png",
 		"name":"bird",
 		"voice":"./img/audioanimal/bird.mp3"
 	},
 	{
-		"image":"./imgs/butterfly.png",
+		"image":"./img/animals/butterfly.png",
 		"name":"butterfly",
 		"voice":"./img/audioanimal/butterfly.mp3"
 	},
 	{
-		"image":"./imgs/camel.png",
+		"image":"./img/animals/camel.png",
 		"name":"camel",
 		"voice":"./img/audioanimal/camel.mp3"
 	},
 	{
-		"image":"./imgs/cat.png",
+		"image":"./img/animals/cat.png",
 		"name":"cat",
 		"voice":"./img/audioanimal/cat.mp3"
 	},
 	{
-		"image":"./imgs/caterpillar.png",
+		"image":"./img/animals/caterpillar.png",
 		"name":"caterpillar",
 		"voice":"./img/audioanimal/caterpillar.mp3"
 	},
 	{
-		"image":"./imgs/chicken.png",
+		"image":"./img/animals/chicken.png",
 		"name":"chicken",
 		"voice":"./img/audioanimal/chicken.mp3"
 	},
 	{
-		"image":"./imgs/cow.png",
+		"image":"./img/animals/cow.png",
 		"name":"cow",
 		"voice":"./img/audioanimal/cow.mp3"
 	},
 	{
-		"image":"./imgs/crab.png",
+		"image":"./img/animals/crab.png",
 		"name":"crab",
 		"voice":"./img/audioanimal/crab.mp3"
 	},
 	{
-		"image":"./imgs/crocodile.png",
+		"image":"./img/animals/crocodile.png",
 		"name":"crocodile",
 		"voice":"./img/audioanimal/crocodile.mp3"
 	},
 	{
-		"image":"./imgs/deer.png",
+		"image":"./img/animals/deer.png",
 		"name":"deer",
 		"voice":"./img/audioanimal/deer.mp3"
 	},
 	{
-		"image":"./imgs/dog.png",
+		"image":"./img/animals/dog.png",
 		"name":"dog",
 		"voice":"./img/audioanimal/dog.mp3"
 	},
 	{
-		"image":"./imgs/donkey.png",
+		"image":"./img/animals/donkey.png",
 		"name":"donkey",
 		"voice":"./img/audioanimal/donkey.mp3"
 	},
 	{
-		"image":"./imgs/duck.png",
+		"image":"./img/animals/duck.png",
 		"name":"duck",
 		"voice":"./img/audioanimal/duck.mp3"
 	},
 	{
-		"image":"./imgs/elephant.png",
+		"image":"./img/animals/elephant.png",
 		"name":"elephant",
 		"voice":"./img/audioanimal/elephant.mp3"
 	},
 	{
-		"image":"./imgs/fish.png",
+		"image":"./img/animals/fish.png",
 		"name":"fish",
 		"voice":"./img/audioanimal/fish.mp3"
 	},
 	{
-		"image":"./imgs/frog.png",
+		"image":"./img/animals/frog.png",
 		"name":"frog",
 		"voice":"./img/audioanimal/frog.mp3"
 	},
 	{
-		"image":"./imgs/giraffe.png",
+		"image":"./img/animals/giraffe.png",
 		"name":"giraffe",
 		"voice":"./img/audioanimal/giraffe.mp3"
 	},
 	{
-		"image":"./imgs/goat.png",
+		"image":"./img/animals/goat.png",
 		"name":"goat",
 		"voice":"./img/audioanimal/goat.mp3"
 	},
 	{
-		"image":"./imgs/hamster.png",
+		"image":"./img/animals/hamster.png",
 		"name":"hamster",
 		"voice":"./img/audioanimal/hamster.mp3"
 	},
 	{
-		"image":"./imgs/hedgehog.png",
+		"image":"./img/animals/hedgehog.png",
 		"name":"hedgehog",
 		"voice":"./img/audioanimal/hedgehog.mp3"
 	},
 	{
-		"image":"./imgs/horse.png",
+		"image":"./img/animals/horse.png",
 		"name":"horse",
 		"voice":"./img/audioanimal/horse.mp3"
 	},
 	{
-		"image":"./imgs/jellyfish.png",
+		"image":"./img/animals/jellyfish.png",
 		"name":"jellyfish",
 		"voice":"./img/audioanimal/jellyfish.mp3"
 	},
 	{
-		"image":"./imgs/ladybird.png",
+		"image":"./img/animals/ladybird.png",
 		"name":"ladybird",
 		"voice":"./img/audioanimal/ladybird.mp3"
 	},
 	{
-		"image":"./imgs/sheep.png",
+		"image":"./img/animals/sheep.png",
 		"name":"sheep",
 		"voice":"./img/audioanimal/sheep.mp3"
 	},
 	{
-		"image":"./imgs/lion.png",
+		"image":"./img/animals/lion.png",
 		"name":"lion",
 		"voice":"./img/audioanimal/lion.mp3"
 	},
 	{
-		"image":"./imgs/mole.png",
+		"image":"./img/animals/mole.png",
 		"name":"mole",
 		"voice":"./img/audioanimal/mole.mp3"
 	},
 	{
-		"image":"./imgs/monkey.png",
+		"image":"./img/animals/monkey.png",
 		"name":"monkey",
 		"voice":"./img/audioanimal/monkey.mp3"
 	},
 	{
-		"image":"./imgs/mouse.png",
+		"image":"./img/animals/mouse.png",
 		"name":"mouse",
 		"voice":"./img/audioanimal/mouse.mp3"
 	},
 	{
-		"image":"./imgs/octopus.png",
+		"image":"./img/animals/octopus.png",
 		"name":"octopus",
 		"voice":"./img/audioanimal/octopus.mp3"
 	},
 	{
-		"image":"./imgs/owl.png",
+		"image":"./img/animals/owl.png",
 		"name":"owl",
 		"voice":"./img/audioanimal/owl.mp3"
 	},
 	{
-		"image":"./imgs/panda.png",
+		"image":"./img/animals/panda.png",
 		"name":"panda",
 		"voice":"./img/audioanimal/panda.mp3"
 	},
 	{
-		"image":"./imgs/penguin.png",
+		"image":"./img/animals/penguin.png",
 		"name":"penguin",
 		"voice":"./img/audioanimal/penguin.mp3"
 	},
 	{
-		"image":"./imgs/pig.png",
+		"image":"./img/animals/pig.png",
 		"name":"pig",
 		"voice":"./img/audioanimal/pig.mp3"
 	},
 	{
-		"image":"./imgs/pony.png",
+		"image":"./img/animals/pony.png",
 		"name":"pony",
 		"voice":"./img/audioanimal/pony.mp3"
 	},
 	{
-		"image":"./imgs/rabbit.png",
+		"image":"./img/animals/rabbit.png",
 		"name":"rabbit",
 		"voice":"./img/audioanimal/rabbit.mp3"
 	},
 	{
-		"image":"./imgs/seahorse.png",
+		"image":"./img/animals/seahorse.png",
 		"name":"seahorse",
 		"voice":"./img/audioanimal/seahorse.mp3"
 	},
 	{
-		"image":"./imgs/snake.png",
+		"image":"./img/animals/snake.png",
 		"name":"snake",
 		"voice":"./img/audioanimal/snake.mp3"
 	},
 	{
-		"image":"./imgs/spider.png",
+		"image":"./img/animals/spider.png",
 		"name":"spider",
 		"voice":"./img/audioanimal/spider.mp3"
 	},
 	{
-		"image":"./imgs/starfish.png",
+		"image":"./img/animals/starfish.png",
 		"name":"starfish",
 		"voice":"./img/audioanimal/starfish.mp3"
 	},
 	{
-		"image":"./imgs/stingray.png",
+		"image":"./img/animals/stingray.png",
 		"name":"stingray",
 		"voice":"./img/audioanimal/stingray.mp3"
 	},
 	{
-		"image":"./imgs/tiger.png",
+		"image":"./img/animals/tiger.png",
 		"name":"tiger",
 		"voice":"./img/audioanimal/tiger.mp3"
 	},
 	{
-		"image":"./imgs/turkey.png",
+		"image":"./img/animals/turkey.png",
 		"name":"turkey",
 		"voice":"./img/audioanimal/turkey.mp3"
 	},
 	{
-		"image":"./imgs/turtle.png",
+		"image":"./img/animals/turtle.png",
 		"name":"turtle",
 		"voice":"./img/audioanimal/turtle.mp3"
 	},
 	{
-		"image":"./imgs/unicorn.png",
+		"image":"./img/animals/unicorn.png",
 		"name":"unicorn",
 		"voice":"./img/audioanimal/unicorn.mp3"
 	},
 	{
-		"image":"./imgs/whale.png",
+		"image":"./img/animals/whale.png",
 		"name":"whale",
 		"voice":"./img/audioanimal/whale.mp3"
 	},
 	{
-		"image":"./imgs/worm.png",
+		"image":"./img/animals/worm.png",
 		"name":"worm",
 		"voice":"./img/audioanimal/worm.mp3"
 	},
 	{
-		"image":"./imgs/zebra.png",
+		"image":"./img/animals/zebra.png",
 		"name":"zebra",
 		"voice":"./img/audioanimal/zebra.mp3"
 	},
 	{
-		"image":"./imgs/pigeon.png",
+		"image":"./img/animals/pigeon.png",
 		"name":"pigeon",
 		"voice":"./img/audioanimal/pigeon.mp3"
 	},
 	{
-		"image":"./imgs/dinosaur.png",
+		"image":"./img/animals/dinosaur.png",
 		"name":"dinosaur",
 		"voice":"./img/audioanimal/dinosaur.mp3"
 	},
 	{
-		"image":"./imgs/dragon.png",
+		"image":"./img/animals/dragon.png",
 		"name":"dragon",
 		"voice":"./img/audioanimal/dragon.mp3"
 	},
 	{
-		"image":"./imgs/kangaroo.png",
+		"image":"./img/animals/kangaroo.png",
 		"name":"kangaroo",
 		"voice":"./img/audioanimal/kangaroo.mp3"
 	},
 	{
-		"image":"./imgs/clownfish.png",
+		"image":"./img/animals/clownfish.png",
 		"name":"clownfish",
 		"voice":"./img/audioanimal/clownfish.mp3"
 	},
 	{
-		"image":"./imgs/rhinoceros.png",
+		"image":"./img/animals/rhinoceros.png",
 		"name":"rhinoceros",
 		"voice":"./img/audioanimal/rhinoceros.mp3"
 	},
 	{
-		"image":"./imgs/toad.png",
+		"image":"./img/animals/toad.png",
 		"name":"toad",
 		"voice":"./img/audioanimal/toad.mp3"
 	},
 	{
-		"image":"./imgs/puppy.png",
+		"image":"./img/animals/puppy.png",
 		"name":"puppy",
 		"voice":"./img/audioanimal/puppy.mp3"
 	},
 	{
-		"image":"./imgs/hippo.png",
+		"image":"./img/animals/hippo.png",
 		"name":"hippo",
 		"voice":"./img/audioanimal/hippo.mp3"
 	},
 	{
-		"image":"./imgs/rat.png",
+		"image":"./img/animals/rat.png",
 		"name":"rat",
 		"voice":"./img/audioanimal/rat.mp3"
 	},
 	{
-		"image":"./imgs/ostrich.png",
+		"image":"./img/animals/ostrich.png",
 		"name":"ostrich",
 		"voice":"./img/audioanimal/ostrich.mp3"
 	},
 	{
-		"image":"./imgs/peacock.png",
+		"image":"./img/animals/peacock.png",
 		"name":"peacock",
 		"voice":"./img/audioanimal/peacock.mp3"
 	}
@@ -337,7 +337,7 @@ function playAudio(i) {
 var animalarray = [1,2,3,4];
 var animalId = undefined;
 function animalfunc() {
-	$('#div4').html('');  // Vider le div 'colorsguess' avant d'ajouter de nouveaux boutons
+	$('#div4').html(''); 
 	var ilength = animalsArray.length - 1;
 	animalId = Math.floor(Math.random() * ilength);
 	var arr = [animalsArray[animalId]["name"]];  // Le bouton cliqué est ajouté en premier dans le tableau arr

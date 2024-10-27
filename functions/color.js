@@ -143,7 +143,7 @@ function colorfunc() {
 		var $color = $('<button class="btn-space" id="' + index + '" onclick="colorguess(this.id)"><h1>' + arr[i] + '</h1></button>');
 		colorarray[index] = arr[i];  // Stocker la couleur dans le tableau colorsarray
 		arr.splice(i, 1);  // Retirer l'élément ajouté du tableau arr
-		$div4.append($color); // ajouter le bouton au div4
+		$div4.append($color);
 		index--;
 	}
 	var $b1 = $('<a href="#div4"><button class="guess btn1" onclick="myGameColor.displayGame()"><h1>Play</h1></button></a>');

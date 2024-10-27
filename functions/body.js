@@ -150,7 +150,7 @@ function bodyfunc() {
 		newarr.splice(index, 1);
 	};
 	console.log(arr);
-	$('.answer').remove();  // Retirer les anciennes réponses si elles existent
+	$('.answer').remove();
 	var $div4 = $('#div4');  // Div où le bouton cliqué sera ajouté
 	var index = arr.length - 1;
 	var $body1 = $('<div class=" column"><img id="'+bodyId+'"onclick="playAudioBody(this.id)" style="background-color : white" class=" imggame animal" src="'+bodyPartsArray[bodyId]["image"]+'" alt="BodyParts" ></div>');

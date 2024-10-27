@@ -63,7 +63,7 @@ function playAudioVegetable(i){
 	var index = VegetablesArray.length - 1;
     while(index >= 0){
 		//var audio = jobArray[index]["voice"];
-		///console.log(audio);
+		
 		var $vegetable = $('<div class="column"><img id="'+index+'" onclick="playAudioVegetable(this.id)" style="background-color : white" class=" imggame animal" src="'+VegetablesArray[index]["image"]+'" alt="Colors" ></div>');
 		// var $animal = $('<div class=" column"><img id="'+index+'"/*onclick="playAudio(this.id)" style="background-color : white" class=" imggame animal" src="'+animalsArray[index]["image"]+'" alt="Colors" ></div>');
 		var $text = $('<h2 class="animalname">'+VegetablesArray[index]["name"]+'</h2>');

@@ -129,7 +129,7 @@ function jobguess(id) {
 	if (jobsArray[jobId]["name"] === jobarray[id]) {
 		generateConfetti();
 	} else {
-		// Crée l'élément audio pour le son fail
+		
 		const failSound = new Audio('audio/basarszlk.mp3');
 		failSound.play(); // Joue le son d'applaudissements
 	}	

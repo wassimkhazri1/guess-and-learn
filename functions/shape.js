@@ -138,7 +138,7 @@ function shapefunc() {
 		var i = Math.floor(Math.random() * (index + 1));
 		var $shape = $('<button class="btn-space" id="' + index + '" onclick="shapeguess(this.id)"><h1>' + arr[i] + '</h1></button>');
 		shapearray[index] = arr[i];  // Stocker la couleur dans le tableau colorsarray
-		arr.splice(i, 1);  // Retirer l'élément ajouté du tableau arr
+		arr.splice(i, 1); 
 		$div4.append($shape); // ajouter le bouton au div4
 		index--;
 	}

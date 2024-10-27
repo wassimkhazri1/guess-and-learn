@@ -124,7 +124,7 @@ function fruitguess(id) {
 	$('.answer').remove();
 	var $div = $('#div4');
 	 var $fruits =  $('<div id="animationContainer"></div>');
-	// Logique pour vérifier la réponse
+	
 	if (fruitsArray[fruitId]["name"] === fruitarray[id]) {
 		generateConfetti();
 	} else {

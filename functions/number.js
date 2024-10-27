@@ -136,7 +136,6 @@ function playAudioNumber(i){
 		var $text = $('<h2 class="animalname">'+numbersArray[index]["name"]+'</h2>');
 		$number.append($text);
 		$numbers.prepend($number);
-		//$numbers.append($number);
 		index--;
 	}
 
