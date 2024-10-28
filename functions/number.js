@@ -183,11 +183,11 @@ function numbers() {
 
 		var $number = $('<img   class="column imggame animal" src="./imgs/'+num1+'.png" alt="Colors" >');
 		$numbers.append($number);
-		var $number = $('<img   onclick="numbers()" class="column imggame animal" src="./imgs/plus.png" alt="Colors" >');
+		var $number = $('<img   onclick="numbers()" class="column imggame animal" src="./img/numbers/plus.png" alt="Colors" >');
 		$numbers.append($number);
 		var $number = $('<img   class="column imggame animal" src="./imgs/'+num2+'.png" alt="Colors" >');
 		$numbers.append($number);
-		var $number = $('<img   onclick="add()"  class="column imggame animal" src="./imgs/equal.png" alt="Colors" >');
+		var $number = $('<img   onclick="add()"  class="column imggame animal" src="./img/numbers/equal.png" alt="Colors" >');
 		$numbers.append($number);
 		var $input = $('<input id="1"  style="font-size: 100px" class="column imggame animal" ></div>');
 		$numbers.append($input);

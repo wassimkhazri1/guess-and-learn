@@ -130,7 +130,7 @@ function jobguess(id) {
 		generateConfetti();
 	} else {
 		
-		const failSound = new Audio('audio/basarszlk.mp3');
+		const failSound = new Audio('audio/fail.mp3');
 		failSound.play(); // Joue le son d'applaudissements
 	}	
 
