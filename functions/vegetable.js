@@ -57,7 +57,7 @@ function playAudioVegetable(i){
   
   function displayVegetables(){
 	$('#div4').html('');
-	var $title = $('<h1 class = "titleh2">Pick a job and learn how to spell its name</h1>')
+	var $title = $('<h1 class = "titleh2">Pick a vegetable and learn how to spell its name</h1>')
 	$('#div4').append($title);
 	var $vegetables =  $('<div id="colors" class="row animalslist"></div>');
 	var index = vegetablesArray.length - 1;

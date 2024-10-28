@@ -153,7 +153,7 @@ function playAudioNumber(i){
   }
   function displayNumbers(){
 	$('#div4').html('');
-	var $title = $('<h1 class = "titleh2">Pick a job and learn how to spell its name</h1>')
+	var $title = $('<h1 class = "titleh2">Pick a number and learn how to spell its name</h1>')
 	$('#div4').append($title);
 	var $numbers =  $('<div id="colors" class="row animalslist"></div>');
 	var index = numbersArray.length - 1;

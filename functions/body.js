@@ -107,7 +107,7 @@ function playAudioBody(i) {
   }
   function displayBody(){
 	$('#div4').html('');
-	var $title = $('<h1 class = "titleh2">Pick a clothe and learn how to spell its name</h1>')
+	var $title = $('<h1 class = "titleh2">Pick a body part and learn how to spell its name</h1>')
 	$('#div4').append($title);
 	var $bodyParts =  $('<div id="colors" class="row animalslist"></div>');
 	var index = bodyPartsArray.length - 1;
