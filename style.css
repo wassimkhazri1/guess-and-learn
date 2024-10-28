@@ -55,12 +55,13 @@ h3{
     color: blue;
 }
 #welcome{
-	background-color: #5fabe9; 
+	background-color: #44c2e9; 
 }
 #div4{
-  height: 2000px; /* Example height to demonstrate scrolling */
+ /* min-height: 2000px;  Example height to demonstrate scrolling */
   padding: 20px;
-  background-color: #51e951;
+  margin-top: 50px;
+  background-color: #44c2e9;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -345,7 +346,7 @@ body {
 }
 
 .content {
-  height: 2000px; /* Example content height to demonstrate scrolling */
+ /* height: 2000px;  Example content height to demonstrate scrolling */
   padding: 20px;
 }
 
