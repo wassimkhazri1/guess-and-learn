@@ -283,6 +283,14 @@ h3{
 	/* margin-top: 100px; */
 	border-radius: 30px;
 }
+.guess1{
+	width: 150px;
+	height: 50px;
+  margin-left: 50px;
+  background-color: #51e951;
+	/* margin-top: 100px; */
+	border-radius: 30px;
+}
 
 .answer {
   margin-top: 30px;
@@ -616,10 +624,6 @@ body {
 .animated-title {
   font-size: 2em;
   animation: slideIn 2s ease-out;
-}
-#clickedColorDiv{
-  height: 2000px; /* Example height to demonstrate scrolling */
-  padding-top: 150px;
 }
 .btn {
   height: 100px;

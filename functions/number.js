@@ -147,6 +147,7 @@ var numbersArray = [
         "voice" :"./img/audionumber/100.mp3"
     }
 ];
+var arr = [0];
 function playAudioNumber(i){
 	var url = numbersArray[i]["voice"];
 	new Audio(url).play();
@@ -158,9 +159,6 @@ function playAudioNumber(i){
 	var $numbers =  $('<div id="colors" class="row animalslist"></div>');
 	var index = numbersArray.length - 1;
     while(index >= 0){
-		//var audio = jobArray[index]["voice"];
-		///console.log(audio);
-		// var $number = $(`<div class="column"><h1 id="${index}" onclick="playAudioNumber(this.id)" style="background-color : white" class=" imggame animal">${index}</h1></div>`);
 	    var $number = $('<div class=" column"><img id="'+index+'"onclick="playAudioNumber(this.id)" style="background-color : white" class=" imggame animal" src="'+numbersArray[index]["image"]+'" alt="Colors" ></div>');
 		var $text = $('<h2 class="animalname">'+numbersArray[index]["name"]+'</h2>');
 		$number.append($text);
@@ -171,29 +169,104 @@ function playAudioNumber(i){
 	$('#div4').append($numbers);
 
 }
-var result = 0;
-function numbers() {
+function number(){
+    $('#div4').html('');
+	var $title = $('<h1 class = "titleh3">select operation to start play</h1>')
+	$('#div4').append($title);
+    // à revoir le code 
+    var $b1 = $(`
+        <select onchange="numbers(this.value)" class="guess1 btn2" style="font-size: 16px">
+           <option value=""><h1>Choose</h1></option>
+            <option value="plus">Addition</option>
+            <option value="multiple">Multiplication</option>
+            <option value="soustraction">Subtraction</option>
+        </select>
+    `);
+    var $b2 = $('<a href="index.html"><button class="guess btn2"><h1>Exit</h1></button></a>');
+	$('#div4').prepend($b1);
+	$('#div4').prepend($b2);  
+
+}
+
+function add() {
+     var input =  $('#1').val();
+    // console.log(input); 
+    // console.log(typeof(input)); 
+	$('.answer').remove();
+	var $div = $('#div4');
+	var $numbers =  $('<div class="answer container"></div>');
+    let value = Number(input);
+    // console.log("this is the type of value : "+ typeof(value));
+	if( value == arr[0] ){
+		// Crée l'élément audio pour le son d'applaudissements
+		const applauseSound = new Audio('audio/applause.mp3');
+		applauseSound.play(); // Joue le son d'applaudissements
+		generateCircles();
+		generateConfetti();	
+
+	}else{
+		// Crée l'élément audio pour le son fail
+		const failSound = new Audio('audio/fail.mp3');
+		failSound.play(); // Joue le son d'applaudissements
+	}
+	$div.append($numbers);	
+}
+function numbers(value) {
 	var num1= Math.floor(Math.random() * 10);
 	var num2= Math.floor(Math.random() * 10);
-	result = num1 + num2;
+    var result;
+    switch(value){
+        case "plus":
+            result = num1 + num2;
+            break;
+        case "multiple":
+            result = num1 * num2;
+            break;
+        case "soustraction":
+            num2 = Math.floor(Math.random() * num1);
+            result = num1 - num2;
+            break;   
+        default:
+            return "Invalid operation";    
+
+    }
+    
+    arr[0] = result;   // pour stocker le resultat obtenu et l'utiliser àprés dans add()
 	$('#div4').html('');
 	var $title = $('<h1 class = "titleh3">Enter your ansewr and click on the equal sign to get you result</h1>')
 	$('#div4').append($title);
 	var $numbers =  $('<div id="colors" class="row numberplus">');
 
-		var $number = $('<img   class="column imggame animal" src="./imgs/'+num1+'.png" alt="Colors" >');
+		var $number = $('<img   class="column imggame animal" src="./imgs/'+num1+'.png" alt="Numbers" >');
 		$numbers.append($number);
-		var $number = $('<img   onclick="numbers()" class="column imggame animal" src="./img/numbers/plus.png" alt="Colors" >');
+
+        switch(value){
+            case "plus":
+                var $number = $('<img   onclick="number()" class="column imggame animal" src="./img/numbers/plus.png" alt="Numbers" >');
+                break;
+            case "multiple":
+                var $number = $('<img   onclick="number()"class="column imggame animal" src="./img/numbers/multiple.png" alt="Numbers" >');
+                break;
+            case "soustraction":
+                var $number = $('<img   onclick="number()"class="column imggame animal" src="./img/numbers/soustraction.png" alt="Numbers" >');
+                break;   
+            default:
+                return "Invalid operation";    
+    
+        }
+
 		$numbers.append($number);
-		var $number = $('<img   class="column imggame animal" src="./imgs/'+num2+'.png" alt="Colors" >');
+
+
+
+
+		var $number = $('<img   class="column imggame animal" src="./imgs/'+num2+'.png" alt="Numbers" >');
 		$numbers.append($number);
 		var $number = $('<img   onclick="add()"  class="column imggame animal" src="./img/numbers/equal.png" alt="Colors" >');
 		$numbers.append($number);
-		var $input = $('<input id="1"  style="font-size: 100px" class="column imggame animal" ></div>');
+		var $input = $('<input id="1" style="font-size: 100px" class="column imggame animal" ></div>');
 		$numbers.append($input);
 
-
-	$('#div4').append($numbers);
-
-	
+      
+	$('#div4').append($numbers);	
 }
