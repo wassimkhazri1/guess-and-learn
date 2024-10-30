@@ -175,12 +175,12 @@ function number(){
 	$('#div4').append($title);
     // à revoir le code 
     var $b1 = $(`
-        <select onchange="numbers(this.value)" class="guess1 btn2" style="font-size: 16px">
-           <option value=""><h1>Choose</h1></option>
-            <option value="plus">Addition</option>
-            <option value="multiple">Multiplication</option>
-            <option value="soustraction">Subtraction</option>
-        </select>
+      <h20><select onchange="numbers(this.value)" class="guess1 btn2" style="font-size: 22px">
+            <option value="">Choose</option>
+            <option value="plus">Addition(+)</option>
+            <option value="multiple">Multiplication(*)</option>
+            <option value="soustraction">Subtraction(-)</option>
+        </select></h20>
     `);
     var $b2 = $('<a href="index.html"><button class="guess btn2"><h1>Exit</h1></button></a>');
 	$('#div4').prepend($b1);
