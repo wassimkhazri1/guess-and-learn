@@ -72,6 +72,9 @@ h3{
   -o-background-size: cover;
   background-size: cover; 
 }
+.marg {
+  margin: auto;
+}
 
 .imag-containe {
   position: relative;
@@ -125,7 +128,8 @@ h3{
 
 /* Style pour chaque colonne (chaque animal) */
 .column {
-  margin-left: auto;
+  margin: auto;
+  /* margin-left: auto; */
   display: flex;
   flex-direction: column;
   align-items: center; /* Centre l'image et le texte dans chaque colonne */
@@ -139,6 +143,7 @@ h3{
 }
 .btn-space h1{
   /* margin-right: 10px; Espace entre les boutons */
+  font-size: 24px;
   margin: 0px 0px 0px 0px;
 }
 
