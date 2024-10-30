@@ -262,10 +262,12 @@ function numbers(value) {
 
 		var $number = $('<img   class="column imggame animal" src="./imgs/'+num2+'.png" alt="Numbers" >');
 		$numbers.append($number);
-		var $number = $('<img   onclick="add()"  class="column imggame animal" src="./img/numbers/equal.png" alt="Colors" >');
+		var $number = $('<img  class="column imggame animal" src="./img/numbers/equal.png" alt="Colors" >');
 		$numbers.append($number);
 		var $input = $('<input id="1" style="font-size: 100px" class="column imggame animal" ></div>');
 		$numbers.append($input);
+        var $number = $('<img   onclick="add()"  class="column imggame animal" src="./img/numbers/confirm.png" alt="Colors" >');
+		$numbers.append($number);
 
       
 	$('#div4').append($numbers);	
