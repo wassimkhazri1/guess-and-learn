@@ -48,7 +48,7 @@ h1{
     font-weight: 1000;
     font-family: cursive;
 }
-h20{
+.h20{
    	color: #FF5722;
     font-weight: 1000;
     font-family: cursive;
@@ -135,6 +135,7 @@ h3{
 .btn-space{
  margin-right: 10px; /*Espace entre les boutons */
  border-radius: 8px; 
+ background-color: rgb(231, 182, 177);
 }
 .btn-space h1{
   /* margin-right: 10px; Espace entre les boutons */
