@@ -46,12 +46,12 @@ h1{
     margin-left: 40%;
    	color: #FF5722;
     font-weight: 1000;
-    font-family: cursive;
+    /* font-family: cursive; */
 }
 h20{
    	color: #FF5722;
     font-weight: 1000;
-    font-family: cursive;
+    /* font-family: cursive; */
 }
 h3{
 	margin-top: 30px;
@@ -240,7 +240,7 @@ h3{
 .text {
 	float: center;
 	font-weight: 300;
-  font-family: cursive;
+  /* font-family: cursive; */
 	color: #FF5722;
 	font-size: 30px;
 	padding: 16px 32px;
@@ -332,7 +332,7 @@ h3{
   margin-left: 30%;
   color: #FF5722;
   font-weight: 1000;
-  font-family: cursive;
+  /* font-family: cursive; */
 }
 .titleh2 {
   margin-top: 0;
@@ -340,7 +340,7 @@ h3{
   margin-left: 20%;
   color: #FF5722;
   font-weight: 1000;
-  font-family: cursive;
+  /* font-family: cursive; */
 }
 .titleh3 {
   margin-top: 0;
@@ -348,7 +348,7 @@ h3{
   margin-left: 10%;
   color: #FF5722;
   font-weight: 1000;
-  font-family: cursive;
+  /* font-family: cursive; */
 }
 .numberplus {
   display: flex;

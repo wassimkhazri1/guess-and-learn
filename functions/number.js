@@ -254,13 +254,7 @@ function numbers(value) {
                 return "Invalid operation";    
     
         }
-
-
 		$numbers.append($number);
-
-
-
-
 		var $number = $('<img   class="column imggame animal" src="./imgs/'+num2+'.png" alt="Numbers" >');
 		$numbers.append($number);
 		var $number = $('<img  class="column imggame animal" src="./img/numbers/equal.png" alt="Colors" >');
@@ -270,17 +264,12 @@ function numbers(value) {
         var $number = $('<img   onclick="add()"  class="column imggame animal" src="./img/numbers/confirm.png" alt="Colors" >');
 		$numbers.append($number);
 
-        $('#div4').append($numbers);
-    	// var $b1 = $('<button class="column imggame animal" style="background-color: rgb(231, 182, 177);"><h1>Play again</h1></button>');
+        
         var $b1 = $('<img  class="column imggame animal" src="./img/numbers/playagain.png" alt="Colors" >');
         $b1.on("click", function() {
             numbers(value);
         });
-        var $b2 = $('<a href="index.html"><img  class="column imggame animal" src="./img/numbers/exit.png" alt="Colors" ></a>');
-        // var $b2 = $('<a href="index.html"><button class="column imggame animal" style="background-color: rgb(231, 182, 177);"><h1>Exit</h1></button></a>');
-        $('#div4').append($b1);
-        $('#div4').append($b2);   
-        
+        var $b2 = $('<a href="index.html"><img  class="column imggame animal" src="./img/numbers/exit.png" alt="Colors" ></a>');        
         var $b3 = $(`
             <h20><select onchange="numbers(this.value)" class="column imggame animal" style="background-color: rgb(231, 182, 177); font-size: 40px">
                   <option value="">Choose</option>
@@ -289,6 +278,9 @@ function numbers(value) {
                   <option value="soustraction">Subtraction(-)</option>
               </select></h20>
           `);
+        $('#div4').append($numbers);
+        $('#div4').append($b1);
+        $('#div4').append($b2);   
         $('#div4').append($b3); 
 		
 }
