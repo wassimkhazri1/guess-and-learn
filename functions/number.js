@@ -242,18 +242,19 @@ function numbers(value) {
 
         switch(value){
             case "plus":
-                var $number = $('<img   onclick="number()" class="column imggame animal" src="./img/numbers/plus.png" alt="Numbers" >');
+                var $number = $('<img  class="column imggame animal" src="./img/numbers/plus.png" alt="Numbers" >');
                 break;
             case "multiple":
-                var $number = $('<img   onclick="number()"class="column imggame animal" src="./img/numbers/multiple.png" alt="Numbers" >');
+                var $number = $('<img  class="column imggame animal" src="./img/numbers/multiple.png" alt="Numbers" >');
                 break;
             case "soustraction":
-                var $number = $('<img   onclick="number()"class="column imggame animal" src="./img/numbers/soustraction.png" alt="Numbers" >');
+                var $number = $('<img  class="column imggame animal" src="./img/numbers/soustraction.png" alt="Numbers" >');
                 break;   
             default:
                 return "Invalid operation";    
     
         }
+
 
 		$numbers.append($number);
 
@@ -269,6 +270,23 @@ function numbers(value) {
         var $number = $('<img   onclick="add()"  class="column imggame animal" src="./img/numbers/confirm.png" alt="Colors" >');
 		$numbers.append($number);
 
-      
-	$('#div4').append($numbers);	
+        $('#div4').append($numbers);
+    	var $b1 = $('<button class="guess btn1"><h1>Play again</h1></button>');
+        $b1.on("click", function() {
+            numbers(value);
+        });
+        var $b2 = $('<a href="index.html"><button class="guess btn2"><h1>Exit</h1></button></a>');
+        $('#div4').append($b1);
+        $('#div4').append($b2);   
+        
+        var $b3 = $(`
+            <h20><select onchange="numbers(this.value)" class="guess1 btn2" style="font-size: 22px">
+                  <option value="">Choose</option>
+                  <option value="plus">Addition(+)</option>
+                  <option value="multiple">Multiplication(*)</option>
+                  <option value="soustraction">Subtraction(-)</option>
+              </select></h20>
+          `);
+        $('#div4').append($b3); 
+		
 }
