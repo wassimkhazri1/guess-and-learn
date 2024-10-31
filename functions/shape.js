@@ -1,85 +1,109 @@
 var shapesArray = [
     {
         "image":"./img/shape/circle.png",
-        "name" : "circle"
+        "name" : "circle",
+        "voice" :"./img/audioshape/circle.mp3"
     },
     {
         "image":"./img/shape/cone.png",
-        "name" : "cone"
+        "name" : "cone",
+        "voice" :"./img/audioshape/cone.mp3"
     },
     {
         "image":"./img/shape/cube.png",
-        "name" : "cube"
+        "name" : "cube",
+        "voice" :"./img/audioshape/cube.mp3"
     },
     {
         "image":"./img/shape/cylinder.png",
-        "name" : "cylinder"
+        "name" : "cylinder",
+        "voice" :"./img/audioshape/cylinder.mp3"
     },
     {
         "image":"./img/shape/decagon.png",
-        "name" : "decagon"
+        "name" : "decagon",
+        "voice" :"./img/audioshape/decagon.mp3"
     },
     {
         "image":"./img/shape/ellipse.png",
-        "name" : "ellipse"
+        "name" : "ellipse",
+        "voice" :"./img/audioshape/ellipse.mp3"
     },
     {
         "image":"./img/shape/heart.png",
-        "name" : "heart"
+        "name" : "heart",
+        "voice" :"./img/audioshape/heart.mp3"
     },
     {
         "image":"./img/shape/heptagon.png",
-        "name" : "heptagon"
+        "name" : "heptagon",
+        "voice" :"./img/audioshape/heptagon.mp3"
     },
     {
         "image":"./img/shape/hexagon.png",
-        "name" : "hexagon"
+        "name" : "hexagon",
+        "voice" :"./img/audioshape/hexagon.mp3"
     },
     {
         "image":"./img/shape/octagon.png",
-        "name" : "octagon"
+        "name" : "octagon",
+        "voice" :"./img/audioshape/octagon.mp3"
     },
     {
         "image":"./img/shape/parallelogram.png",
-        "name" : "parallelogram"
+        "name" : "parallelogram",
+        "voice" :"./img/audioshape/parallelogram.mp3"
     },
     {
         "image":"./img/shape/pentagon.png",
-        "name" : "pentagon"
+        "name" : "pentagon",
+        "voice" :"./img/audioshape/pentagon.mp3"
     },
     {
         "image":"./img/shape/reclangularprism.png",
-        "name" : "reclangularprism"
+        "name" : "reclangularprism",
+        "voice" :"./img/audioshape/reclangularprism.mp3"
     },
     {
         "image":"./img/shape/rectangle.png",
-        "name" : "rectangle"
+        "name" : "rectangle",
+        "voice" :"./img/audioshape/rectangle.mp3"
     },
     {
         "image":"./img/shape/rhombus.png",
-        "name" : "rhombus"
+        "name" : "rhombus",
+        "voice" :"./img/audioshape/rhombus.mp3"
     },
     {
         "image":"./img/shape/righttriangle.png",
-        "name" : "righttriangle"
+        "name" : "righttriangle",
+        "voice" :"./img/audioshape/righttriangle.mp3"
     },
     {
         "image":"./img/shape/square.png",
-        "name" : "square"
+        "name" : "square",
+        "voice" :"./img/audioshape/square.mp3"
     },
     {
         "image":"./img/shape/star.png",
-        "name" : "star"
+        "name" : "star",
+        "voice" :"./img/audioshape/star.mp3"
     },
     {
         "image":"./img/shape/trapezoid.png",
-        "name" : "trapezoid"
+        "name" : "trapezoid",
+        "voice" :"./img/audioshape/trapezoid.mp3"
     },
     {
         "image":"./img/shape/triangle.png",
-        "name" : "triangle"
+        "name" : "triangle",
+        "voice" :"./img/audioshape/triangle.mp3"
     }
 ];
+function playAudioShape(i){
+	var url = shapesArray[i]["voice"];
+	new Audio(url).play();
+  }
 function displayShapes(){
 	$('#div4').html('');
 	var $title = $('<h1 class = "titleh2">Pick a shape and learn how to spell its name</h1>')
@@ -89,8 +113,7 @@ function displayShapes(){
     while(index >= 0){
 		//var audio = colorsArray[index]["voice"];
 		//console.log(audio);
-		var $shape = $('<div class=" column"><img id="'+index+'" style="background-color : white" class=" imggame animal" src="'+shapesArray[index]["image"]+'" alt="Colors" ></div>');
-		// var $animal = $('<div class=" column"><img id="'+index+'"/*onclick="playAudio(this.id)" style="background-color : white" class=" imggame animal" src="'+animalsArray[index]["image"]+'" alt="Colors" ></div>');
+		var $shape = $('<div class=" column"><img id="'+index+'" onclick="playAudioShape(this.id)" style="background-color : white" class=" imggame animal" src="'+shapesArray[index]["image"]+'" alt="Colors" ></div>');
 		var $text = $('<h2 class="animalname">'+shapesArray[index]["name"]+'</h2>');
 		$shape.append($text);
 		$shapes.prepend($shape);
@@ -150,7 +173,7 @@ function shapefunc() {
 function shapeguess(id) {
 	$('.answer').remove();
 	var $div = $('#div4');
-	 var $jobs =  $('<div id="animationContainer"></div>');
+	 var $shapes =  $('<div id="animationContainer"></div>');
 	// Logique pour vérifier la réponse
 	if (shapesArray[shapeId]["name"] === shapearray[id]) {
 		generateConfetti();

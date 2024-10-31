@@ -142,14 +142,10 @@ function playAudioLetter(i){
 	var $letters =  $('<div id="colors" class="row animalslist"></div>');
 	var index = lettersArray.length - 1;
     while(index >= 0){
-		//var audio = jobArray[index]["voice"];
-		///console.log(audio);
 		var $letter = $('<div class=" column"><img id="'+index+'" onclick="playAudioLetter(this.id)" style="background-color : white" class=" imggame animal" src="'+lettersArray[index]["image"]+'" alt="Letters" ></div>');
-		// var $animal = $('<div class=" column"><img id="'+index+'"/*onclick="playAudio(this.id)" style="background-color : white" class=" imggame animal" src="'+animalsArray[index]["image"]+'" alt="Colors" ></div>');
 		var $text = $('<h2 class="animalname">'+lettersArray[index]["name"]+'</h2>');
 		$letter.append($text);
 		$letters.prepend($letter);
-		//$jobs.append($job);
 		index--;
 	}
 
@@ -190,7 +186,7 @@ function letterfunc() {
 			$div4.prepend($letter1);
 		}
 		var i = Math.floor(Math.random() * (index + 1));
-		var $letter = $('<button class="btn-space" id="' + index + '" onclick="letterguess(this.id)"><h1>' + arr[i] + '</h1></button>');
+		var $letter = $('<button class="btn-space" id="' + index + '" onclick="letterguess(this.id)"><h1>' + arr[i].toUpperCase().fontsize("72") + '</h1></button>');
 		letterarray[index] = arr[i];  // Stocker la couleur dans le tableau colorsarray
 		arr.splice(i, 1);  // Retirer l'élément ajouté du tableau arr
 		$div4.append($letter); // ajouter le bouton au div4

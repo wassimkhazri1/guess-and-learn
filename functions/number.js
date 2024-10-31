@@ -271,16 +271,18 @@ function numbers(value) {
 		$numbers.append($number);
 
         $('#div4').append($numbers);
-    	var $b1 = $('<button class="guess btn1"><h1>Play again</h1></button>');
+    	// var $b1 = $('<button class="column imggame animal" style="background-color: rgb(231, 182, 177);"><h1>Play again</h1></button>');
+        var $b1 = $('<img  class="column imggame animal" src="./img/numbers/playagain.png" alt="Colors" >');
         $b1.on("click", function() {
             numbers(value);
         });
-        var $b2 = $('<a href="index.html"><button class="guess btn2"><h1>Exit</h1></button></a>');
+        var $b2 = $('<a href="index.html"><img  class="column imggame animal" src="./img/numbers/exit.png" alt="Colors" ></a>');
+        // var $b2 = $('<a href="index.html"><button class="column imggame animal" style="background-color: rgb(231, 182, 177);"><h1>Exit</h1></button></a>');
         $('#div4').append($b1);
         $('#div4').append($b2);   
         
         var $b3 = $(`
-            <h20><select onchange="numbers(this.value)" class="guess1 btn2" style="font-size: 22px">
+            <h20><select onchange="numbers(this.value)" class="column imggame animal" style="background-color: rgb(231, 182, 177); font-size: 40px">
                   <option value="">Choose</option>
                   <option value="plus">Addition(+)</option>
                   <option value="multiple">Multiplication(*)</option>
