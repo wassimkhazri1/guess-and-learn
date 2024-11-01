@@ -152,6 +152,9 @@ function playAudioNumber(i){
 	var url = numbersArray[i]["voice"];
 	new Audio(url).play();
   }
+  function redirectToIndex() {
+    window.location.href = 'index.html';
+}  
   function displayNumbers(){
 	$('#div4').html('');
 	var $title = $('<h1 class = "titleh2">Pick a number and learn how to spell its name</h1>')
@@ -233,7 +236,7 @@ function numbers(value) {
     
     arr[0] = result;   // pour stocker le resultat obtenu et l'utiliser àprés dans add()
 	$('#div4').html('');
-	var $title = $('<h1 class = "titleh3">Enter your ansewr and click on the equal sign to get you result</h1>')
+	var $title = $('<h1 class = "titleh3">Enter your ansewr and click on the confirm sign to get you result</h1>')
 	$('#div4').append($title);
 	var $numbers =  $('<div id="colors" class="row numberplus">');
 
@@ -255,32 +258,39 @@ function numbers(value) {
     
         }
 		$numbers.append($number);
+
 		var $number = $('<img   class="column imggame animal" src="./imgs/'+num2+'.png" alt="Numbers" >');
 		$numbers.append($number);
-		var $number = $('<img  class="column imggame animal" src="./img/numbers/equal.png" alt="Colors" >');
-		$numbers.append($number);
-		var $input = $('<input id="1" style="font-size: 100px" class="column imggame animal" ></div>');
-		$numbers.append($input);
-        var $number = $('<img   onclick="add()"  class="column imggame animal" src="./img/numbers/confirm.png" alt="Colors" >');
+
+		var $number = $('<img  class="column imggame animal" src="./img/numbers/equal.png" alt="Numbers" >');
 		$numbers.append($number);
 
-        
-        var $b1 = $('<img  class="column imggame animal" src="./img/numbers/playagain.png" alt="Colors" >');
-        $b1.on("click", function() {
+		var $input = $('<input id="1" style="font-size: 100px" class="column imggame animal" ></div>');
+		$numbers.append($input);
+
+        var $number = $('<img   onclick="add()"  class="column imggame animal" src="./img/numbers/confirm.png" alt="Numbers" >');
+		$numbers.append($number);
+
+        var $number = $('<img    class="column imggame animal" src="./img/numbers/playagain.png" alt="Numbers" >');
+        $number.on("click", function() {
             numbers(value);
         });
-        var $b2 = $('<a href="index.html"><img  class="column imggame animal" src="./img/numbers/exit.png" alt="Colors" ></a>');        
-        var $b3 = $(`
-            <h20><select onchange="numbers(this.value)" class="column imggame animal" style="background-color: rgb(231, 182, 177); font-size: 40px">
+        $numbers.append($number);
+
+        var $number = $('<img    onclick="redirectToIndex() "class="column imggame animal" src="./img/numbers/exit.png" alt="Numbers" >');
+		$numbers.append($number);
+
+        var $number = $(`
+            <h20><select onchange="numbers(this.value)" class="column imggame animal" style="background-color: rgb(231, 182, 177); font-size: 24px">
                   <option value="">Choose</option>
                   <option value="plus">Addition(+)</option>
                   <option value="multiple">Multiplication(*)</option>
                   <option value="soustraction">Subtraction(-)</option>
               </select></h20>
           `);
+        $numbers.append($number);  
+
         $('#div4').append($numbers);
-        $('#div4').append($b1);
-        $('#div4').append($b2);   
-        $('#div4').append($b3); 
+
 		
 }

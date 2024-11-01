@@ -51,6 +51,8 @@ h1{
 h20{
    	color: #FF5722;
     font-weight: 1000;
+    width: 100px;
+    border-radius: 8px;
     /* font-family: cursive; */
 }
 h3{
@@ -210,6 +212,7 @@ h3{
 	/* margin-top: 100px; */
 	margin-left: 150px;
   gap: 10px;
+  border-radius: 5px;
 }
 @media screen and (max-width: 768px) {
   #game{
