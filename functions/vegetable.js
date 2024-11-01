@@ -48,7 +48,38 @@ var vegetablesArray = [
         "image" : "./img/vegetables/tomatoes.png",
         "name" : "tomatoes",
         "voice" :"./img/audiovegetable/tomatoes.mp3"
+    },
+    {
+        "image" : "./img/vegetables/chili.png",
+        "name" : "chili",
+        "voice" :"./img/audiovegetable/chili.mp3"
+    },
+    {
+        "image" : "./img/vegetables/pumpkin.png",
+        "name" : "pumpkin",
+        "voice" :"./img/audiovegetable/pumpkin.mp3"
+    },
+    {
+        "image" : "./img/vegetables/mushroom.png",
+        "name" : "mushroom",
+        "voice" :"./img/audiovegetable/mushroom.mp3"
+    },
+    {
+        "image" : "./img/vegetables/radish.png",
+        "name" : "radish",
+        "voice" :"./img/audiovegetable/radish.mp3"
+    },
+    {
+        "image" : "./img/vegetables/cauliflower.png",
+        "name" : "cauliflower",
+        "voice" :"./img/audiovegetable/cauliflower.mp3"
+    },
+    {
+        "image" : "./img/vegetables/beetroot.png",
+        "name" : "beetroot",
+        "voice" :"./img/audiovegetable/beetroot.mp3"
     }
+
 ];
 function playAudioVegetable(i){
 	var url = vegetablesArray[i]["voice"];

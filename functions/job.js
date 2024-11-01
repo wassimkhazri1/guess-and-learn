@@ -48,6 +48,36 @@ var jobsArray = [
         "image" : "./img/jobs/waitress.png",
         "name" : "waitress",
         "voice" :"./img/audiojob/waitress.mp3"
+    },
+    {
+        "image" : "./img/jobs/nurse.png",
+        "name" : "nurse",
+        "voice" :"./img/audiojob/nurse.mp3"
+    },
+    {
+        "image" : "./img/jobs/pilot.png",
+        "name" : "pilot",
+        "voice" :"./img/audiojob/pilot.mp3"
+    },
+    {
+        "image" : "./img/jobs/dentist.png",
+        "name" : "dentist",
+        "voice" :"./img/audiojob/dentist.mp3"
+    },
+    {
+        "image" : "./img/jobs/musician.png",
+        "name" : "musician",
+        "voice" :"./img/audiojob/musician.mp3"
+    },
+    {
+        "image" : "./img/jobs/veterinarian.png",
+        "name" : "veterinarian",
+        "voice" :"./img/audiojob/veterinarian.mp3"
+    },
+    {
+        "image" : "./img/jobs/scientist.png",
+        "name" : "scientist",
+        "voice" :"./img/audiojob/scientist.mp3"
     }
 ];
 function playAudioJob(i){

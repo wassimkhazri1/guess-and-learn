@@ -48,7 +48,38 @@ var fruitsArray =[
         "image" : "./img/fruits/strawberry.png",
         "name" : "strawberry",
         "voice" : "./img/audiofruit/strawberry.mp3"
+    },
+    {
+        "image" : "./img/fruits/watermelon.png",
+        "name" : "watermelon",
+        "voice" : "./img/audiofruit/watermelon.mp3"
+    },
+    {
+        "image" : "./img/fruits/peach.png",
+        "name" : "peach",
+        "voice" : "./img/audiofruit/peach.mp3"
+    },
+    {
+        "image" : "./img/fruits/mango.png",
+        "name" : "mango",
+        "voice" : "./img/audiofruit/mango.mp3"
+    },
+    {
+        "image" : "./img/fruits/kiwi.png",
+        "name" : "kiwi",
+        "voice" : "./img/audiofruit/kiwi.mp3"
+    },
+    {
+        "image" : "./img/fruits/coconut.png",
+        "name" : "coconut",
+        "voice" : "./img/audiofruit/coconut.mp3"
+    },
+    {
+        "image" : "./img/fruits/papaya.png",
+        "name" : "papaya",
+        "voice" : "./img/audiofruit/papaya.mp3"
     }
+
     ];
     function playAudioFruit(i) {
         var url = fruitsArray[i]["voice"];

@@ -53,6 +53,31 @@ var colorsArray = [
         "image":"./img/colors/yellow.png",
         "name" : "yellow",
         "voice":"./img/audiocolor/yellow.mp3"
+    },
+    {
+        "image":"./img/colors/turquoise.png",
+        "name" : "turquoise",
+        "voice":"./img/audiocolor/turquoise.mp3"
+    },
+    {
+        "image":"./img/colors/silver.png",
+        "name" : "silver",
+        "voice":"./img/audiocolor/silver.mp3"
+    },
+    {
+        "image":"./img/colors/gold.png",
+        "name" : "gold",
+        "voice":"./img/audiocolor/gold.mp3"
+    },
+    {
+        "image":"./img/colors/strypit.png",
+        "name" : "strypit",
+        "voice":"./img/audiocolor/strypit.mp3"
+    },
+    {
+        "image":"./img/colors/skyblue.png",
+        "name" : "skyblue",
+        "voice":"./img/audiocolor/skyblue.mp3"
     }
 
 ];
