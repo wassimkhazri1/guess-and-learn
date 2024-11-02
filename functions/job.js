@@ -92,14 +92,10 @@ function playAudioJob(i){
 	var $jobs =  $('<div id="colors" class="row animalslist"></div>');
 	var index = jobsArray.length - 1;
     while(index >= 0){
-		//var audio = jobArray[index]["voice"];
-		///console.log(audio);
 		var $job = $('<div class=" column"><img id="'+index+'" onclick="playAudioJob(this.id)" style="background-color : white" class=" imggame animal" src="'+jobsArray[index]["image"]+'" alt="Colors" ></div>');
-		// var $animal = $('<div class=" column"><img id="'+index+'"/*onclick="playAudio(this.id)" style="background-color : white" class=" imggame animal" src="'+animalsArray[index]["image"]+'" alt="Colors" ></div>');
 		var $text = $('<h2 class="animalname">'+jobsArray[index]["name"]+'</h2>');
 		$job.append($text);
 		$jobs.prepend($job);
-		//$jobs.append($job);
 		index--;
 	}
 
@@ -120,10 +116,10 @@ function jobfunc() {
 	 for (var i = 0; i < jobsArray.length; i++) {
 	 	newarr.push(jobsArray[i]["name"]);
 	 };
-	  console.log(arr);
-	  console.log(newarr);
+	//   console.log(arr);
+	//   console.log(newarr);
 	 newarr.splice(jobId, 1);  // Retirer la couleur sélectionnée du tableau newarr
-	 console.log(newarr);
+	//  console.log(newarr);
 	// Ajouter des couleurs aléatoires de newarr dans arr jusqu'à ce qu'il y ait 4 éléments
 	for (var i = newarr.length - 1; arr.length < 4; i--) {
 		var index = Math.floor(Math.random() * i);
@@ -151,13 +147,18 @@ function jobfunc() {
 	$div4.prepend($b1);
 	$div4.prepend($b2);
 }
+window.onload = function() {
+	generateConfetti();
+};
 function jobguess(id) {
 	$('.answer').remove();
 	var $div = $('#div4');
 	 var $jobs =  $('<div id="animationContainer"></div>');
 	// Logique pour vérifier la réponse
 	if (jobsArray[jobId]["name"] === jobarray[id]) {
-		generateConfetti();
+		window.onload();
+		
+		// generateConfetti();
 	} else {
 		
 		const failSound = new Audio('audio/fail.mp3');

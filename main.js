@@ -52,7 +52,7 @@ function generateConfetti() {
         
         setTimeout(() => {
             confetti.remove();
-        }, 3000);
+        }, 1000);
     }
 
     setTimeout(() => {

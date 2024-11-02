@@ -153,7 +153,7 @@ function clothefunc() {
 	$('.answer').remove();  
 	var $div4 = $('#div4');  // Div où le bouton cliqué sera ajouté
 	var index = arr.length - 1;
-	var $clothe1 = $('<div class=" column"><img id="'+clotheId+'"onclick="playAudio(this.id)" style="background-color : white" class=" imggame animal" src="'+clothesArray[clotheId]["image"]+'" alt="Clothes" ></div>');
+	var $clothe1 = $('<div class=" column"><img id="'+clotheId+'"onclick="playAudioClothe(this.id)" style="background-color : white" class=" imggame animal" src="'+clothesArray[clotheId]["image"]+'" alt="Clothes" ></div>');
 	while (index >= 0) {
 		if(index == 0){
 			$div4.prepend($clothe1);
