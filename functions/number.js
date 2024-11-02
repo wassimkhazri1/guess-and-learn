@@ -192,26 +192,22 @@ function number(){
 }
 
 function add() {
-     var input =  $('#1').val();
-    // console.log(input); 
-    // console.log(typeof(input)); 
-	$('.answer').remove();
+    let input =  $('#1').val();
+    $('.answer').remove();
 	var $div = $('#div4');
-	var $numbers =  $('<div class="answer container"></div>');
-    let value = Number(input);
-    // console.log("this is the type of value : "+ typeof(value));
-	if( value == arr[0] ){
-		// Crée l'élément audio pour le son d'applaudissements
-		const applauseSound = new Audio('audio/applause.mp3');
-		applauseSound.play(); // Joue le son d'applaudissements
-		generateCircles();
+	// var $numbers =  $('<div class="answer container"></div>');
+    var $numbers =  $('<div id="animationContainer"></div>');
+   // let value = Number(input);
+   let value = input;
+    if( value == arr[0] )
+        {
 		generateConfetti();	
 
-	}else{
+	    }else{
 		// Crée l'élément audio pour le son fail
 		const failSound = new Audio('audio/fail.mp3');
 		failSound.play(); // Joue le son d'applaudissements
-	}
+	        }
 	$div.append($numbers);	
 }
 function numbers(value) {

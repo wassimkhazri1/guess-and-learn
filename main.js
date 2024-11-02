@@ -1,4 +1,3 @@
-//import { colorsArr,animalsArray,fruitsArray,colorsArray,shapesArray } from './database.js'; 	
 function generateAnimation(type) {
     const container = document.getElementById('animationContainer');
     
@@ -52,7 +51,7 @@ function generateConfetti() {
         
         setTimeout(() => {
             confetti.remove();
-        }, 1000);
+        }, 2000);
     }
 
     setTimeout(() => {
@@ -71,11 +70,15 @@ function generateCircles() {
         circle.style.left = Math.random() * 100 + 'vw';
         circle.style.background = `rgba(${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}, 0.7)`;
         
-        container.appendChild(circle);
+        if (container) {
+            container.appendChild(circle);
+        } else {
+            console.error("Container element not found!");
+        }
         
         setTimeout(() => {
             circle.remove();
-        }, 1000);
+        }, 2000);
     }
 
     setTimeout(() => {
