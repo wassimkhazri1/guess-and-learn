@@ -41,14 +41,8 @@ function generateConfetti() {
         
         confetti.style.top = Math.random() * 50 + 'vh'; 
         confetti.style.left = Math.random() * 100 + 'vw';
-        confetti.style.animationDelay = Math.random() * 1 + 's';
-        
-        if (container) {
-            container.appendChild(confetti);
-        } else {
-            console.error("Element 'container' not found in the DOM");
-        }
-        
+        confetti.style.animationDelay = Math.random() * 1 + 's';      
+         container.append(confetti);
         setTimeout(() => {
             confetti.remove();
         }, 2000);
@@ -69,13 +63,9 @@ function generateCircles() {
         circle.style.top = Math.random() * 100 + 'vh';
         circle.style.left = Math.random() * 100 + 'vw';
         circle.style.background = `rgba(${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}, 0.7)`;
-        
-        if (container) {
-            container.appendChild(circle);
-        } else {
-            console.error("Container element not found!");
-        }
-        
+
+            container.append(circle); 
+            //container.appendChild(circle);       
         setTimeout(() => {
             circle.remove();
         }, 2000);
