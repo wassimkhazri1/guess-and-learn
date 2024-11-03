@@ -2,7 +2,7 @@ var numbersArray = [
     {
         "image" : "./img/numbers/zero.png",
         "name" : "zero",
-        "voice" :""
+        "voice" :"./img/audionumber/0.mp3"
     },
     {
         "image" : "./img/numbers/one.png",
