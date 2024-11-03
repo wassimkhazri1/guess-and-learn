@@ -385,6 +385,8 @@ function animalguess(id) {
 	 var $colors =  $('<div id="animationContainer"></div>');
 	// Logique pour vérifier la réponse
 	if (animalsArray[animalId]["name"] === animalarray[id]) {
+		const applauseSound = new Audio('audio/applause.mp3');
+		applauseSound.play(); // Joue le son d'applaudissements
 		generateConfetti();
 	} else {
 		// Crée l'élément audio pour le son fail

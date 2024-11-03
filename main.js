@@ -29,8 +29,6 @@ function generateConfetti() {
     const container = document.getElementById('animationContainer');
 
 	    // Crée l'élément audio pour le son d'applaudissements
-		const applauseSound = new Audio('audio/applause.mp3');
-		applauseSound.play(); // Joue le son d'applaudissements
         generateCircles();
     for (let i = 0; i < 50; i++) { // 50 confettis
         let confetti = document.createElement('div');

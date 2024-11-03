@@ -147,18 +147,15 @@ function jobfunc() {
 	$div4.prepend($b1);
 	$div4.prepend($b2);
 }
-window.onload = function() {
-	generateConfetti();
-};
 function jobguess(id) {
 	$('.answer').remove();
 	var $div = $('#div4');
 	 var $jobs =  $('<div id="animationContainer"></div>');
 	// Logique pour vérifier la réponse
 	if (jobsArray[jobId]["name"] === jobarray[id]) {
-		window.onload();
-		
-		// generateConfetti();
+        const applauseSound = new Audio('audio/applause.mp3');
+		applauseSound.play(); // Joue le son d'applaudissements
+		generateConfetti();
 	} else {
 		
 		const failSound = new Audio('audio/fail.mp3');

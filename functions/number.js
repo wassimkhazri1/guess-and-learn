@@ -201,6 +201,8 @@ function add() {
    let value = input;
     if( value == arr[0] )
         {
+        const applauseSound = new Audio('audio/applause.mp3');
+        applauseSound.play(); // Joue le son d'applaudissements    
 		generateConfetti();	
 
 	    }else{

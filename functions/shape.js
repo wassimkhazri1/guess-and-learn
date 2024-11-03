@@ -176,7 +176,9 @@ function shapeguess(id) {
 	 var $shapes =  $('<div id="animationContainer"></div>');
 	// Logique pour vérifier la réponse
 	if (shapesArray[shapeId]["name"] === shapearray[id]) {
-		generateConfetti();
+        const applauseSound = new Audio('audio/applause.mp3');
+		applauseSound.play(); // Joue le son d'applaudissements
+        generateConfetti();
 	} else {
 		// Crée l'élément audio pour le son fail
 		const failSound = new Audio('audio/fail.mp3');

@@ -182,7 +182,9 @@ function colorguess(id) {
 	 var $colors =  $('<div id="animationContainer"></div>');
 	// Logique pour vérifier la réponse
 	if (colorsArray[colorId]["name"] === colorarray[id]) {
-		generateConfetti();
+        const applauseSound = new Audio('audio/applause.mp3');
+		applauseSound.play(); // Joue le son d'applaudissements
+        generateConfetti();
 	} else {
 		// Crée l'élément audio pour le son fail
 		const failSound = new Audio('audio/fail.mp3');

@@ -203,7 +203,9 @@ function letterguess(id) {
 	 var $letters =  $('<div id="animationContainer"></div>');
 	// Logique pour vérifier la réponse
 	if (lettersArray[letterId]["name"] === letterarray[id]) {
-		generateConfetti();
+        const applauseSound = new Audio('audio/applause.mp3');
+		applauseSound.play(); // Joue le son d'applaudissements
+        generateConfetti();
 	} else {
 		
 		const failSound = new Audio('audio/fail.mp3');

@@ -157,7 +157,9 @@ function vegetableguess(id) {
 	 var $vegetables =  $('<div id="animationContainer"></div>');
 	// Logique pour vérifier la réponse
 	if (vegetablesArray[vegetableId]["name"] === vegetablearray[id]) {
-		generateConfetti();
+        const applauseSound = new Audio('audio/applause.mp3');
+		applauseSound.play(); // Joue le son d'applaudissements
+        generateConfetti();
 	} else {
 		
 		const failSound = new Audio('audio/fail.mp3');
