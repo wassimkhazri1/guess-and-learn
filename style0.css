@@ -1,0 +1,699 @@
+#logo2 {
+  margin-top: 10px;
+  margin-left: 50px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  #logo2 {
+    margin-top: 8px;
+    margin-left: 20px;
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #logo2 {
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 60px;
+  }
+}
+
+.navbar-brand {
+    float: left;
+    height: 50px;
+    /* padding: 5px 15px; */
+    font-size: 18px;
+    line-height: 20px;
+    background-color: #33ddff;
+}
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #33ddff;
+}
+
+#logo{
+	width: 40px;
+}
+h1{
+	margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 40%;
+   	color: #FF5722;
+    font-weight: 1000;
+    /* font-family: cursive; */
+}
+h20{
+   	color: #FF5722;
+    font-weight: 1000;
+    width: 100px;
+    border-radius: 8px;
+    /* font-family: cursive; */
+}
+h3{
+	margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 40%;
+    color: blue;
+}
+#welcome{
+	background-color: #44c2e9; 
+}
+#div4{
+ /* min-height: 2000px;  Example height to demonstrate scrolling */
+  padding: 20px;
+  margin-top: 50px;
+  background-color: #44c2e9;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+}
+.marg {
+  margin: auto;
+}
+
+.imag-containe {
+  position: relative;
+  display: inline-block; 
+}
+.over{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 768px) {
+  .over{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .over{
+    position: absolute;
+    top: 50%;
+    left: 34%;
+    transform: translate(-30%, -50%);
+  }
+}
+.overlay-button {
+  font-size: 16px;
+  background-color: rgba(25, 39, 235, 0.7);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay-button:hover {
+  background-color: rgba(62, 218, 88, 0.9);
+}
+
+* {
+  box-sizing: border-box;
+}
+/* Style de conteneur pour les animaux */
+.animalslist {
+  display: flex;
+  flex-wrap: wrap; /* Pour permettre aux animaux de se placer sur plusieurs lignes si nécessaire */
+  justify-content: center; /* Centre les éléments dans le conteneur */
+  gap: 10px; /* Espace entre les images */
+}
+
+/* Style pour chaque colonne (chaque animal) */
+.column {
+  margin: auto;
+  /* margin-left: auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre l'image et le texte dans chaque colonne */
+  width: 150px; /* Largeur de chaque colonne */
+
+}
+.btn-space{
+ margin-right: 10px; /*Espace entre les boutons */
+ border-radius: 8px; 
+ background-color: rgb(231, 182, 177);
+}
+.btn-space h1{
+  /* margin-right: 10px; Espace entre les boutons */
+  font-size: 24px;
+  margin: 0px 0px 0px 0px;
+}
+
+
+/* Style pour l'image */
+.imggame {
+  width: 250px; /* Ajuste la taille de l'image */
+  height: 250px;
+  object-fit: cover; /* Ajuste l'image pour éviter la distorsion */
+  /* border: 2px solid #ccc; */
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex
+}
+@media screen and (max-width: 768px) {
+  .imggame {
+    width: 200px; /* Ajuste la taille de l'image */
+    height: 200px;
+    object-fit: cover; /* Ajuste l'image pour éviter la distorsion */
+    /* border: 2px solid #ccc; */
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .imggame {
+    width: 150px; /* Ajuste la taille de l'image */
+    height: 150px;
+    object-fit: cover; /* Ajuste l'image pour éviter la distorsion */
+    /* border: 2px solid #ccc; */
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex
+  }
+}
+
+/* Style pour le texte sous chaque image */
+.animalname {
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.column2 {
+  float: left;
+  width: 60%;
+  padding: 5px;
+  margin-top: 30px;
+  /* margin-left: 30px;
+  margin-right: 30px; */
+  
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  padding: 35px;
+  clear: both;
+  display: table;
+}
+#game{
+	/* margin-top: 100px; */
+	margin-left: 150px;
+  gap: 10px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  #game{
+    margin-left: 150px;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #game{
+    margin-left: 15px;
+    gap: 10px;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+
+.column:hover {
+  -ms-transform: scale(1.10); /* IE 9 */
+  -webkit-transform: scale(1.10); /* Safari 3-8 */
+  transform: scale(1.10); 
+  border-radius: 20px;
+
+}
+
+.text {
+	float: center;
+	font-weight: 300;
+  /* font-family: cursive; */
+	color: #FF5722;
+	font-size: 30px;
+	padding: 16px 32px;
+}
+.columntext {
+  float: left;
+  width: 10%;
+  padding: 5px;
+  margin-left: 250px;
+  margin-right: 0;
+  
+}
+
+.color{
+	width: 100px;
+	height: 100px;
+	margin-left: 5px;
+	margin-top: 50px; 
+	border-radius: 8px;
+}
+.color1{
+	width: 100px;
+	height: 100px;
+	margin-left: 40%;
+	margin-top: 50px; 
+	border-radius: 8px;
+}
+
+.animal{
+  display: flex;
+	width: 150px;
+	height: 150px;
+	margin-left: 0px;
+	margin-top: 50px; 
+	border-radius: 8px;
+  
+}
+
+.colorguess{
+	width: 100px;
+	height: 50px;
+  margin-left: 50px;
+	/* margin-top: 100px; */
+	border-radius: 8px;
+}
+.guess{
+	width: 100px;
+	height: 50px;
+  margin-left: 50px;
+  background-color: #51e951;
+	/* margin-top: 100px; */
+	border-radius: 30px;
+}
+.guess1{
+	width: 150px;
+	height: 50px;
+  margin-left: 50px;
+  background-color: #51e951;
+	/* margin-top: 100px; */
+	border-radius: 30px;
+}
+
+.answer {
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 20px;
+  width: 38%;
+}
+
+.correct {
+  color: #51e951;
+  margin-left: 28%;
+  margin-top: 5%;
+  font-size: large;
+  font-family: fantasy;
+}
+
+.wrong {
+  color: #FF5722;
+  margin-left: 28%;
+  margin-top: 5%;
+  font-size: large;
+  font-family: fantasy;
+}
+
+.titleh1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 30%;
+  color: #FF5722;
+  font-weight: 1000;
+  /* font-family: cursive; */
+}
+.titleh2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 20%;
+  color: #FF5722;
+  font-weight: 1000;
+  /* font-family: cursive; */
+}
+.titleh3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 10%;
+  color: #FF5722;
+  font-weight: 1000;
+  /* font-family: cursive; */
+}
+.numberplus {
+  display: flex;
+
+}
+
+
+/*  styling for scroll up  */
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+ /* height: 2000px;  Example content height to demonstrate scrolling */
+  padding: 20px;
+}
+
+#scrollToTopBtn {
+  display: none; /* Initially hide the button */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  line-height: 48px; /* Center icon vertically */
+  text-align: center;
+  transition: opacity 0.4s;
+}
+
+#scrollToTopBtn:hover {
+  opacity: 0.8;
+}
+
+/*--------------------------------------------------------------
+# Global Footer
+--------------------------------------------------------------*/
+.footer {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.footer .social-links {
+  margin: 0 0 30px 0;
+}
+
+.footer .social-links a {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  line-height: 1;
+  margin: 0 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  text-decoration: none;
+}
+
+.footer .copyright {
+  padding-top: 25px;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.footer .credits {
+  font-size: 13px;
+  padding-top: 5px;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  overflow: hidden;
+  background: var(--background-color);
+  transition: all 0.6s ease-out;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Cachée par défaut */
+  position: fixed; /* Position fixe */
+  z-index: 1; /* Affiche au-dessus de tout le reste */
+  padding-top: 100px; /* Espace en haut de l'écran */
+  left: 0;
+  top: 0;
+  width: 100%; /* Largeur totale */
+  height: 100%; /* Hauteur totale */
+  overflow: auto; /* Activer le scroll si nécessaire */
+  background-color: rgba(0,0,0,0.8); /* Fond sombre */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+}
+
+/* Caption of the modal (text) */
+#caption {
+  margin: auto;
+  display: block;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+/* Container de l'animation couvrant toute la fenêtre */
+#animationContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* Empêche l'interaction avec le contenu */
+  z-index: 9999; /* Au-dessus de tout */
+}
+
+/* Style pour les étoiles/fleurs */
+.star {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: gold;
+  border-radius: 50%; /* Pour une étoile, ronde */
+  opacity: 0;
+  animation: fadeInOut 2s ease-in-out forwards;
+  box-shadow: 0 0 10px gold, 0 0 20px yellow; /* Ajoute un éclat lumineux */
+}
+
+.flower {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: pink;
+  border-radius: 50%;
+  opacity: 0;
+  animation: fadeInOut 2s ease-in-out forwards;
+  box-shadow: 0 0 10px pink, 0 0 20px lightpink;
+}
+
+/* Animation de fade-in et fade-out */
+@keyframes fadeInOut {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* Confetti style */
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 30px;
+  background-color: randomColor();
+  opacity: 0;
+  transform: rotate(45deg);
+  animation: fallConfetti 3s ease-in-out forwards;
+}
+
+@keyframes fallConfetti {
+  0% {
+    transform: translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.circle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 0, 0, 0.7);
+  animation: expandCircle 1s ease-out forwards;
+}
+
+@keyframes expandCircle {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+  }
+}
+
+
+@keyframes slideIn {
+  from {
+      transform: translateX(-100%);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+.animated-title {
+  font-size: 2em;
+  animation: slideIn 2s ease-out;
+}
+.btn {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  /* color: white; */
+  /* background-color: #007bff; */
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+.btn1:hover {
+  background-color: #0056b3;
+}
+.btn2:hover {
+  background-color: #d8b621;
+}
+.btn1,.btn2 {
+  padding: 0px 30px 0px 0px;
+}
+button.column.colorguess.imggame {
+  padding: 0px 30px 0px 0px;
+}
+
+
+/* 75% {
+  font-size: 300%;
+  margin-left: 25%;
+  width: 150%;
+} */
+
+.p1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}

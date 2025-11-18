@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess & Learn!</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+	  <!-- Vendor CSS Files -->
+	  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	  <link href="vendor/aos/aos.css" rel="stylesheet">
+	  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+	  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<style>
+	/* Custom CSS for removing spaces */
+	/* .imag-containe {
+		position: relative;
+		margin: 0;
+		padding: 0;
+	}
+	.imag-containe img {
+		width: 100%;
+		display: block;
+	} */
+	/* .over {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50%;
+		height: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(0, 0, 0, 0.5);
+		opacity: 0;
+		transition: opacity 0.3s;
+	} */
+	/* .imag-containe:hover .over {
+		opacity: 1;
+	} */
+
+	/* No spaces between columns */
+	/* .row.no-gutters {
+		margin-right: 0;
+		margin-left: 0;
+	} */
+	/* .col-lg-4, .col-md-6, .col-sm-12 {
+		padding-right: 0;
+		padding-left: 0;
+	} */
+</style>
+
+<body>
+	<div id="welcome">
+		<div class="row">
+				<div class="col-lg-12">
+		    	<img id="logo2" src="./img/guessandlearn.png">
+				<h1 class="animated-title">Welcome to Guess and Learn!</h1>
+			</div>
+		</div>
+	    <div id="game">
+			<div class="row">
+				<div class="imggame col-lg-4 col-md-6 col-sm-12">
+					<a href="#div4">
+						<div class="imag-containe">
+						  <img class="column imggame" src="./img/colors/colors.png" alt="Colors">
+						  <div class="over">
+						  <button class="overlay-button" onclick="myGameColor.displayGame()">Play</button>
+						  <button class="overlay-button" onclick="displayColors()">Learn</button>
+						</div>
+						</div>
+					  </a>
+
+				</div>
+				<div class="imggame col-lg-4 col-md-6 col-sm-12">
+					<a href="#div4">
+						<div class="imag-containe">
+							<img class="column imggame" src="./img/animals/animals.png" href="#div4" alt="Animals">
+						  <div class="over">
+						  <button class="overlay-button" onclick="myGameAnimal.displayGame()">Play</button>
+						  <button class="overlay-button" onclick="animals()">Learn</button>
+						</div>
+						</div>
+					  </a>
+				</div>
+				<div class="imggame col-lg-4 col-md-6 col-sm-12">
+					<a href="#div4">
+						<div class="imag-containe">
+							<img class="column imggame" src="./img/numbers/numbers5.png" href="#div4" alt="Numbers">
+						  <div class="over">
+						  <button class="overlay-button" onclick="number()">Play</button>
+						  <button class="overlay-button" onclick="displayNumbers()">Learn</button>
+						</div>
+						</div>
+					  </a>
+				</div>
+				<div class="imggame col-lg-4 col-md-6 col-sm-12">
+					<a href="#div4">
+						<div class="imag-containe">
+							<img  class="column imggame" src="./img/fruits/fruits.png" href="#div4" alt="Fruits">
+						  <div class="over">
+						  <button class="overlay-button" onclick="myGameFruit.displayGame()">Play</button>
+						  <button class="overlay-button" onclick="displayFruits()">Learn</button>
+						</div>
+						</div>
+					  </a>
+				</div>
+				<div class="imggame col-lg-4 col-md-6 col-sm-12">
+					<a href="#div4">
+						<div class="imag-containe">
+							<img  class="column imggame" src="./img/shape/shapes.png" href="#div4" alt="Shapes">
+						  <div class="over">
+						  <button class="overlay-button" onclick="myGameShape.displayGame()">Play</button>
+						  <button class="overlay-button" onclick="displayShapes()">Learn</button>
+						</div>
+						</div>
+					  </a>
+				</div>
+				<div class="imggame col-lg-4 col-md-6 col-sm-12">
+					<a href="#div4">
+						<div class="imag-containe">
+							<img  class="column imggame" src="./img/vegetables/vegetables.png" href="#div4" alt="Vegetables">
+						  <div class="over">
+						  <button class="overlay-button" onclick="myGameVegetable.displayGame()">Play</button>
+						  <button class="overlay-button" onclick="displayVegetables()">Learn</button>
+						</div>
+						</div>
+					  </a>
+				</div>
+				<div class="imggame col-lg-4 col-md-6 col-sm-12">
+					<a href="#div4">
+						<div class="imag-containe">
+							<img  class="column imggame" src="./img/clothes/clothes.png" href="#div4" alt="Clothes">
+						  <div class="over">
+						  <button class="overlay-button" onclick="myGameClothe.displayGame()">Play</button>
+						  <button class="overlay-button" onclick="displayClothes()">Learn</button>
+						</div>
+						</div>
+					  </a>
+				</div>
+				<div class="imggame col-lg-4 col-md-6 col-sm-12">
+					<a href="#div4">
+						<div class="imag-containe">
+							<img  class="column imggame" src="./img/body/mybody.png" href="#div4" alt="MyBody">
+						  <div class="over">
+						  <button class="overlay-button" onclick="myGameBody.displayGame()">Play</button>
+						  <button class="overlay-button" onclick="displayBody()">Learn</button>
+						</div>
+						</div>
+					  </a>
+				</div>
+				<div class="imggame col-lg-4 col-md-6 col-sm-12">
+					<a href="#div4">
+						<div class="imag-containe">
+							<img  class="column imggame" src="./img/jobs/jobs.png" href="#div4" alt="Jobs">
+						  <div class="over">
+						  <button class="overlay-button" onclick="myGameJob.displayGame()">Play</button>
+						  <button class="overlay-button" onclick="displayJob()">Learn</button>
+						</div>
+						</div>
+					  </a>
+				</div>
+				<div class="imggame col-lg-4 col-md-6 col-sm-12">
+					<a href="#div4">
+						<div class="imag-containe">
+							<img  class="column imggame" src="./img/letters/letters.png" href="#div4" alt="Letters">
+						  <div class="over">
+						  <button class="overlay-button" onclick="myGameLetter.displayGame()">Play</button>
+						  <button class="overlay-button" onclick="displayLetter()">Learn</button>
+						</div>
+						</div>
+					  </a>
+				</div>
+	    </div>
+	</div>
+	<div id="div4">
+	</div>
+	<footer id="footer" class="footer position-relative light-background">
+		<div class="container">
+		  <h3 class="sitename">Wassim Khazri</h3>
+		  <p>Innovative and deadline-driven Web Developer with 2+ years of experience developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</p>
+		  <div class="social-links d-flex justify-content-center">
+			<a href="https://www.facebook.com/wassim.khazri.106" target="_blank"><i class="bi bi-facebook"></i></a>
+			<a href="https://www.linkedin.com/in/wassim-khazri-ab923a14b/" target="_blank"><i class="bi bi-linkedin"></i></a>
+		  </div>
+		  <div class="container">
+			<div class="copyright">
+			  <span>Copyright</span> <strong class="px-1 sitename">Wassim Khazri</strong> <span>All Rights Reserved</span>
+			</div>
+			<div class="credits">
+			  Created by <a href="https://www.linkedin.com/in/wassim-khazri-ab923a14b/" target="_blank">Wassim Khazri</a>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+	   <script type="text/javascript" src="main.js"></script> 
+	  <a href="index.html"><button id="scrollToTopBtn">&#8679;</button></a>
+	  <script src="script.js"></script>
+	  <script type="text/javascript" src="./functions/color.js"></script>
+	  <script type="text/javascript" src="./functions/number.js"></script>
+	  <script type="text/javascript" src="./functions/animal.js"></script>
+	  <script type="text/javascript" src="./functions/clothe.js"></script>
+	  <script type="text/javascript" src="./functions/fruit.js"></script>
+	  <script type="text/javascript" src="./functions/shape.js"></script>
+	  <script type="text/javascript" src="./functions/job.js"></script>
+	  <script type="text/javascript" src="./functions/vegetable.js"></script>
+	  <script type="text/javascript" src="./functions/body.js"></script>
+	  <script type="text/javascript" src="./functions/letter.js"></script>
+</body>
+</html>
